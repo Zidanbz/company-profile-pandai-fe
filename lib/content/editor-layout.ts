@@ -398,6 +398,12 @@ export const editorSections: Record<string, ContentSection> = {
     description:
       "Informasi untuk menghubungi perusahaan dan teks formulir pesan.",
     anchor: "kontak",
+    related: {
+      href: "/admin/contact",
+      label: "Buka kotak masuk",
+      description:
+        "Baca dan kelola pesan yang dikirim melalui formulir kontak website.",
+    },
     blocks: [
       named(
         "details",

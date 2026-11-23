@@ -4,43 +4,31 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
-  Home,
   Briefcase,
-  Building2,
   FileText,
-  Mail,
   Settings,
   LogOut,
   Globe,
   Award,
   MapPin,
-  PanelBottom,
-  BarChart3,
+  Home,
   MessageSquare,
 } from "lucide-react";
 import { authApi } from "@/lib/api/auth";
-import { contactApi } from "@/lib/api/contact";
 import { chatApi } from "@/lib/api/chat";
 import { cn } from "@/lib/utils/cn";
 
 export const AdminSidebar: React.FC = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const [unreadCount, setUnreadCount] = useState<number>(0);
   const [unreadChatCount, setUnreadChatCount] = useState<number>(0);
 
   useEffect(() => {
     const fetchUnread = async () => {
       try {
-        const [contactRes, chatRes] = await Promise.allSettled([
-          contactApi.getUnreadCount(),
-          chatApi.getAdminUnreadCount(),
-        ]);
-        if (contactRes.status === "fulfilled" && typeof contactRes.value?.unreadCount === "number") {
-          setUnreadCount(contactRes.value.unreadCount);
-        }
-        if (chatRes.status === "fulfilled" && typeof chatRes.value?.unreadCount === "number") {
-          setUnreadChatCount(chatRes.value.unreadCount);
+        const result = await chatApi.getAdminUnreadCount();
+        if (typeof result?.unreadCount === "number") {
+          setUnreadChatCount(result.unreadCount);
         }
       } catch (err) {
         // silent fallback
@@ -63,16 +51,7 @@ export const AdminSidebar: React.FC = () => {
     { label: "Layanan", href: "/admin/services", icon: Briefcase },
     { label: "Titik Peta", href: "/admin/map", icon: MapPin },
     { label: "Mitra & Client", href: "/admin/partners", icon: Award },
-    { label: "Tentang Kami", href: "/admin/about", icon: Building2 },
     { label: "Blog", href: "/admin/posts", icon: FileText },
-    {
-      label: "Kontak",
-      href: "/admin/contact",
-      icon: Mail,
-      badge: unreadCount > 0 ? unreadCount : undefined,
-    },
-    { label: "Footer", href: "/admin/footer", icon: PanelBottom },
-    { label: "Analitik", href: "/admin/analytics", icon: BarChart3 },
   ];
 
   const menuSistem = [
@@ -137,14 +116,16 @@ export const AdminSidebar: React.FC = () => {
                       "flex items-center justify-between px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150",
                       active
                         ? "bg-[#dbeafe] dark:bg-blue-950/70 text-[#1d4ed8] dark:text-blue-400 shadow-xs"
-                        : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-slate-800/80"
+                        : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-slate-800/80",
                     )}
                   >
                     <div className="flex items-center gap-3">
                       <Icon
                         className={cn(
                           "w-4 h-4",
-                          active ? "text-[#1d4ed8] dark:text-blue-400" : "text-slate-500 dark:text-slate-400"
+                          active
+                            ? "text-[#1d4ed8] dark:text-blue-400"
+                            : "text-slate-500 dark:text-slate-400",
                         )}
                       />
                       <span>{item.label}</span>
@@ -178,13 +159,15 @@ export const AdminSidebar: React.FC = () => {
                       "flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-150",
                       active
                         ? "bg-[#dbeafe] dark:bg-blue-950/70 text-[#1d4ed8] dark:text-blue-400 shadow-xs"
-                        : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-slate-800/80"
+                        : "text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100/80 dark:hover:bg-slate-800/80",
                     )}
                   >
                     <Icon
                       className={cn(
                         "w-4 h-4",
-                        active ? "text-[#1d4ed8] dark:text-blue-400" : "text-slate-500 dark:text-slate-400"
+                        active
+                          ? "text-[#1d4ed8] dark:text-blue-400"
+                          : "text-slate-500 dark:text-slate-400",
                       )}
                     />
                     <span>{item.label}</span>

@@ -1,2 +1,5 @@
-import { WebsiteContentEditor } from "@/components/admin/WebsiteContentEditor";
-export default function Page() { return <WebsiteContentEditor initialGroup="hero" />; }
+import { AnalyticsDashboard } from "@/components/admin/AnalyticsDashboard";
+
+export default function Page() {
+  return <AnalyticsDashboard />;
+}

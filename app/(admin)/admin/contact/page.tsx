@@ -21,7 +21,7 @@ import { ContactMessageData } from "@/types";
 import { Modal } from "@/components/base/Modal";
 
 export default function AdminContactPage() {
-  const [activeTab, setActiveTab] = useState<"info" | "messages">("info");
+  const [activeTab, setActiveTab] = useState<"info" | "messages">("messages");
   const [loading, setLoading] = useState(true);
   // Messages inbox
   const [messages, setMessages] = useState<ContactMessageData[]>([]);
