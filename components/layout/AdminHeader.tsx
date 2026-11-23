@@ -2,12 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { Calendar, Bell } from "lucide-react";
+import { Calendar, Bell, Menu } from "lucide-react";
 import { contactApi } from "@/lib/api/contact";
 import { User } from "@/types";
 import { ThemeToggle } from "@/components/theme/ThemeToggle";
 
-export const AdminHeader: React.FC = () => {
+export const AdminHeader: React.FC<{ onOpenMenu?: () => void }> = ({
+  onOpenMenu,
+}) => {
   const [user, setUser] = useState<User | null>(null);
   const [formattedDate, setFormattedDate] = useState<string>("");
   const [unreadCount, setUnreadCount] = useState<number>(0);
@@ -52,15 +54,25 @@ export const AdminHeader: React.FC = () => {
   }, []);
 
   return (
-    <header className="h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-8 flex items-center justify-between sticky top-0 z-10 transition-colors duration-200">
+    <header className="h-16 bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 sm:px-6 lg:px-8 flex items-center justify-between sticky top-0 z-10 transition-colors duration-200">
+      {onOpenMenu && (
+        <button
+          type="button"
+          aria-label="Buka menu admin"
+          onClick={onOpenMenu}
+          className="rounded-lg p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 md:hidden"
+        >
+          <Menu className="h-5 w-5" />
+        </button>
+      )}
       {/* Date Display */}
-      <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300 text-sm font-medium">
+      <div className="hidden sm:flex items-center gap-2 text-slate-600 dark:text-slate-300 text-sm font-medium">
         <Calendar className="w-4 h-4 text-slate-400 dark:text-slate-500" />
         <span>{formattedDate || "Kamis, 24 September 2026"}</span>
       </div>
 
       {/* Right Controls: ThemeToggle, Notifications & User */}
-      <div className="flex items-center gap-4 sm:gap-5">
+      <div className="ml-auto flex items-center gap-2 sm:gap-5">
         {/* Theme Switcher Button */}
         <ThemeToggle />
 
@@ -83,7 +95,7 @@ export const AdminHeader: React.FC = () => {
           <div className="w-9 h-9 rounded-full bg-[#0066ff] text-white flex items-center justify-center font-bold text-xs tracking-wider shadow-sm">
             GL
           </div>
-          <div className="flex flex-col text-left">
+          <div className="hidden lg:flex flex-col text-left">
             <span className="text-xs font-bold text-slate-900 dark:text-white leading-tight">
               Admin Utama
             </span>
