@@ -5,7 +5,7 @@ import { ArrowLeft, Globe } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-slate-50 dark:bg-slate-950 px-4">
       <Container size="sm" className="text-center space-y-6">
         <div className="w-16 h-16 rounded-2xl bg-brand-50 border border-brand-200 text-brand-600 flex items-center justify-center mx-auto shadow-sm">
           <Globe className="w-8 h-8" />
@@ -13,10 +13,10 @@ export default function NotFound() {
 
         <div>
           <h1 className="text-6xl font-black text-brand-600">404</h1>
-          <h2 className="text-2xl font-bold text-slate-900 mt-2">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mt-2">
             Halaman Tidak Ditemukan
           </h2>
-          <p className="text-sm text-slate-500 mt-2 max-w-md mx-auto">
+          <p className="text-sm text-slate-500 dark:text-slate-400 mt-2 max-w-md mx-auto">
             Halaman yang Anda tuju mungkin telah dipindahkan atau tautan tidak lagi tersedia.
           </p>
         </div>

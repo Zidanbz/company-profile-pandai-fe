@@ -9,7 +9,7 @@ import { ArrowRight } from "lucide-react";
 export const CtaSection: React.FC = () => {
   const t = useSiteText();
   return (
-    <section className="py-12 md:py-20 bg-white relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-white dark:bg-slate-950 relative overflow-hidden">
       <Container size="xl">
         <div className="rounded-[40px] bg-gradient-to-r from-[#052747] via-[#0066ad] to-[#06345d] p-10 sm:p-16 text-white text-center shadow-2xl relative overflow-hidden">
           

@@ -136,12 +136,12 @@ export const HeroSection: React.FC = () => {
               <motion.div 
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-3.5 -left-3.5 bg-white px-4 py-2 rounded-2xl shadow-[0_15px_30px_-5px_rgba(0,50,120,0.25)] border border-sky-100 flex items-center gap-2.5 z-20"
+                className="absolute -top-3.5 -left-3.5 bg-white dark:bg-slate-900 px-4 py-2 rounded-2xl shadow-[0_15px_30px_-5px_rgba(0,50,120,0.25)] border border-sky-100 dark:border-slate-700 flex items-center gap-2.5 z-20"
               >
                 <div className="w-2.5 h-2.5 rounded-full bg-[#0077c8] shadow-[0_0_8px_#0077c8]" />
                 <div className="text-left">
-                  <p className="text-xs font-black text-[#0077c8]">{t("pandai_hero_013")}</p>
-                  <p className="text-[10px] text-slate-500 font-semibold">{t("pandai_hero_014")}</p>
+                  <p className="text-xs font-black text-[#0077c8] dark:text-sky-400">{t("pandai_hero_013")}</p>
+                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">{t("pandai_hero_014")}</p>
                 </div>
               </motion.div>
 
@@ -149,12 +149,12 @@ export const HeroSection: React.FC = () => {
               <motion.div 
                 animate={{ y: [0, 6, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -bottom-3.5 -right-3.5 bg-white px-4 py-2 rounded-2xl shadow-[0_15px_30px_-5px_rgba(249,115,22,0.25)] border border-orange-100 flex items-center gap-2.5 z-20"
+                className="absolute -bottom-3.5 -right-3.5 bg-white dark:bg-slate-900 px-4 py-2 rounded-2xl shadow-[0_15px_30px_-5px_rgba(249,115,22,0.25)] border border-orange-100 dark:border-slate-700 flex items-center gap-2.5 z-20"
               >
                 <div className="w-2.5 h-2.5 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316]" />
                 <div className="text-left">
                   <p className="text-xs font-black text-[#f97316]">{t("pandai_hero_015")}</p>
-                  <p className="text-[10px] text-slate-500 font-semibold">{t("pandai_hero_016")}</p>
+                  <p className="text-[10px] text-slate-500 dark:text-slate-400 font-semibold">{t("pandai_hero_016")}</p>
                 </div>
               </motion.div>
 
@@ -221,38 +221,38 @@ export const HeroSection: React.FC = () => {
 
         {/* 4. Feature Ribbon Card (01, 02, 03, 04) - Sculpted Floating Pill Shape with Rich Shadows */}
         <div className="mt-14 sm:mt-20 relative z-20">
-          <div className="rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-xl border border-white/80 shadow-[0_25px_60px_-15px_rgba(0,35,80,0.35)] p-5 sm:p-7 text-slate-800">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-100">
+          <div className="rounded-2xl sm:rounded-3xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-white/80 dark:border-slate-700 shadow-[0_25px_60px_-15px_rgba(0,35,80,0.35)] p-5 sm:p-7 text-slate-800">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-100 dark:divide-slate-700">
               <div className="space-y-1 pt-2 md:pt-0">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[#0077c8] font-extrabold text-xl">{t("pandai_hero_023")}</span>
-                  <span className="font-bold text-base text-slate-900">{t("pandai_hero_024")}</span>
+                  <span className="text-[#0077c8] dark:text-sky-400 font-extrabold text-xl">{t("pandai_hero_023")}</span>
+                  <span className="font-bold text-base text-slate-900 dark:text-slate-100">{t("pandai_hero_024")}</span>
                 </div>
-                <p className="text-xs text-slate-500 font-medium">{t("pandai_hero_025")}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{t("pandai_hero_025")}</p>
               </div>
 
               <div className="space-y-1 pt-3 md:pt-0 md:pl-6">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[#0077c8] font-extrabold text-xl">{t("pandai_hero_026")}</span>
-                  <span className="font-bold text-base text-slate-900">{t("pandai_hero_027")}</span>
+                  <span className="text-[#0077c8] dark:text-sky-400 font-extrabold text-xl">{t("pandai_hero_026")}</span>
+                  <span className="font-bold text-base text-slate-900 dark:text-slate-100">{t("pandai_hero_027")}</span>
                 </div>
-                <p className="text-xs text-slate-500 font-medium">{t("pandai_hero_028")}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{t("pandai_hero_028")}</p>
               </div>
 
               <div className="space-y-1 pt-3 md:pt-0 md:pl-6">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-[#0077c8] font-extrabold text-xl">{t("pandai_hero_029")}</span>
-                  <span className="font-bold text-base text-slate-900">{t("pandai_hero_030")}</span>
+                  <span className="text-[#0077c8] dark:text-sky-400 font-extrabold text-xl">{t("pandai_hero_029")}</span>
+                  <span className="font-bold text-base text-slate-900 dark:text-slate-100">{t("pandai_hero_030")}</span>
                 </div>
-                <p className="text-xs text-slate-500 font-medium">{t("pandai_hero_031")}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{t("pandai_hero_031")}</p>
               </div>
 
               <div className="space-y-1 pt-3 md:pt-0 md:pl-6">
                 <div className="flex items-baseline gap-2">
                   <span className="text-[#f97316] font-extrabold text-xl">{t("pandai_hero_032")}</span>
-                  <span className="font-bold text-base text-slate-900">{t("pandai_hero_033")}</span>
+                  <span className="font-bold text-base text-slate-900 dark:text-slate-100">{t("pandai_hero_033")}</span>
                 </div>
-                <p className="text-xs text-slate-500 font-medium">{t("pandai_hero_034")}</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">{t("pandai_hero_034")}</p>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@ export const HeroSection: React.FC = () => {
 
       {/* 5. Elegant Wave Transition */}
       <div className="relative mt-8 sm:mt-12">
-        <LayeredWave fillColor="fill-white" />
+        <LayeredWave fillColor="fill-white dark:fill-slate-950" />
       </div>
     </section>
   );

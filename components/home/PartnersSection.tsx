@@ -14,7 +14,6 @@ import {
   ShieldCheck,
   CheckCircle2,
   Award,
-  Globe2,
 } from "lucide-react";
 
 // Default Strategic Partners (Principals / Vendors / Providers) - 100% HD Vectors
@@ -242,7 +241,9 @@ const DEFAULT_CLIENTS: PartnerLogoData[] = [
 ];
 
 export const PartnersSection: React.FC = () => {
-  const t = useSiteText();
+  const siteText = useSiteText();
+  // Legacy CMS values contain escaped ampersands; render plain text, never HTML.
+  const t = (key: string) => siteText(key).replace(/&amp;/gi, "&");
   const [partnerLogos, setPartnerLogos] = useState<PartnerLogoData[]>(DEFAULT_PARTNERS);
   const [clientLogos, setClientLogos] = useState<PartnerLogoData[]>(DEFAULT_CLIENTS);
 
@@ -270,28 +271,24 @@ export const PartnersSection: React.FC = () => {
   return (
     <section
       id="mitra"
-      className="relative pt-24 pb-20 sm:pt-32 sm:pb-28 bg-gradient-to-b from-white via-slate-50/60 to-white overflow-hidden scroll-mt-28 sm:scroll-mt-36"
+      className="relative pt-24 pb-20 sm:pt-32 sm:pb-28 bg-gradient-to-b from-white dark:from-slate-950 via-slate-50/60 dark:via-slate-900/60 to-white dark:to-slate-950 overflow-hidden scroll-mt-28 sm:scroll-mt-36"
     >
       
       {/* ── Soft Ambient Lighting in Pandai Blue & Emerald ── */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-sky-100/40 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-10 right-10 w-[400px] h-[250px] bg-emerald-50/50 rounded-full blur-[100px] pointer-events-none" />
-
-      {/* ── High-Grade Horizontal Edge Fades for Seamless Marquee ── */}
-      <div className="absolute left-0 inset-y-0 w-20 sm:w-44 bg-gradient-to-r from-white via-white/90 to-transparent z-20 pointer-events-none" />
-      <div className="absolute right-0 inset-y-0 w-20 sm:w-44 bg-gradient-to-l from-white via-white/90 to-transparent z-20 pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-sky-100/40 dark:bg-blue-950/40 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-10 right-10 w-[400px] h-[250px] bg-emerald-50/50 dark:bg-emerald-950/20 rounded-full blur-[100px] pointer-events-none" />
 
       <Container size="xl" className="relative z-10">
         
         {/* ── Distinctive Header Section (With Safe Padding Below Fixed Navbar) ── */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16 pt-2">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 text-[#0077c8] border border-sky-200/80 shadow-sm text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-[#0077c8]" />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 border border-sky-200/80 dark:border-slate-700 shadow-sm text-xs font-bold uppercase tracking-wider">
+            <Sparkles className="w-3.5 h-3.5 text-[#0077c8] dark:text-sky-400" />
             {t("pandai_partners_001")}</div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            {t("pandai_partners_002")}<span className="text-[#0077c8]">{t("pandai_partners_003")}</span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-tight">
+            {t("pandai_partners_002")}<span className="text-[#0077c8] dark:text-sky-400">{t("pandai_partners_003")}</span>
           </h2>
-          <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-normal max-w-2xl mx-auto">
             {t("pandai_partners_004")}</p>
         </div>
 
@@ -302,23 +299,22 @@ export const PartnersSection: React.FC = () => {
           <div className="space-y-4">
             
             {/* Row Category Badge */}
-            <div className="flex items-center justify-between px-2">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-xl bg-white border border-slate-200/90 shadow-sm">
-                <div className="w-6 h-6 rounded-lg bg-sky-100 text-[#0077c8] flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-3 px-2 text-center">
+              <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 shadow-sm">
+                <div className="w-6 h-6 rounded-lg bg-sky-100 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 flex items-center justify-center">
                   <Handshake className="w-3.5 h-3.5" />
                 </div>
-                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-slate-900">
-                  {t("pandai_partners_005")}</span>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-50 text-[#0077c8] border border-sky-100">
+                <h3 className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-slate-100">
+                  {t("pandai_partners_005")}</h3>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 border border-sky-100 dark:border-slate-800">
                   {t("pandai_partners_006")}</span>
               </div>
-              <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400">
-                <Globe2 className="w-3.5 h-3.5" />
-                {t("pandai_partners_007")}</span>
             </div>
 
             {/* Logo Marquee Track inside Uniform Floating Capsules */}
-            <div className="flex overflow-hidden select-none py-2 group">
+            <div className="relative flex overflow-hidden select-none py-2 group">
+              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-white dark:from-slate-950 to-transparent sm:w-20" />
+              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-white dark:from-slate-950 to-transparent sm:w-20" />
               <motion.div
                 animate={{ x: ["0%", "-33.333%"] }}
                 transition={{ duration: 40, ease: "linear", repeat: Infinity }}
@@ -327,7 +323,7 @@ export const PartnersSection: React.FC = () => {
                 {loopPartners.map((partner, idx) => (
                   <div
                     key={`partner-${partner.id}-${idx}`}
-                    className="h-20 sm:h-24 min-w-[180px] sm:min-w-[210px] px-6 sm:px-7 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center shrink-0 group/card cursor-pointer"
+                    className="h-20 sm:h-24 min-w-[180px] sm:min-w-[210px] px-6 sm:px-7 rounded-2xl bg-white border border-slate-200/90 dark:border-slate-700 shadow-sm hover:shadow-xl hover:border-sky-300 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center shrink-0 group/card cursor-pointer"
                     title={partner.name}
                   >
                     {partner.logoUrl ? (
@@ -355,7 +351,7 @@ export const PartnersSection: React.FC = () => {
           {/* ════════════ ACCENT DIVIDER ════════════ */}
           <div className="relative flex items-center justify-center py-2">
             <div className="w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
-            <div className="absolute px-3 py-1 bg-white border border-slate-200 rounded-full text-[11px] font-bold text-slate-400 uppercase tracking-widest shadow-sm">
+            <div className="absolute px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-full text-[11px] font-bold text-slate-400 uppercase tracking-widest shadow-sm">
               {t("pandai_partners_010")}</div>
           </div>
 
@@ -363,23 +359,22 @@ export const PartnersSection: React.FC = () => {
           <div className="space-y-4">
             
             {/* Row Category Badge */}
-            <div className="flex items-center justify-between px-2">
-              <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-xl bg-white border border-slate-200/90 shadow-sm">
-                <div className="w-6 h-6 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center gap-3 px-2 text-center">
+              <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2.5 px-4 py-2 rounded-xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-700 shadow-sm">
+                <div className="w-6 h-6 rounded-lg bg-emerald-100 dark:bg-emerald-950/50 text-emerald-700 dark:text-emerald-400 flex items-center justify-center">
                   <Building2 className="w-3.5 h-3.5" />
                 </div>
-                <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-slate-900">
-                  {t("pandai_partners_011")}</span>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100">
+                <h3 className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-slate-100">
+                  {t("pandai_partners_011")}</h3>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900">
                   {t("pandai_partners_012")}</span>
               </div>
-              <span className="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                {t("pandai_partners_013")}</span>
             </div>
 
             {/* Reverse Logo Marquee Track inside Uniform Floating Capsules */}
-            <div className="flex overflow-hidden select-none py-2 group">
+            <div className="relative flex overflow-hidden select-none py-2 group">
+              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-white dark:from-slate-950 to-transparent sm:w-20" />
+              <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-white dark:from-slate-950 to-transparent sm:w-20" />
               <motion.div
                 animate={{ x: ["-33.333%", "0%"] }}
                 transition={{ duration: 45, ease: "linear", repeat: Infinity }}
@@ -388,7 +383,7 @@ export const PartnersSection: React.FC = () => {
                 {loopClients.map((client, idx) => (
                   <div
                     key={`client-${client.id}-${idx}`}
-                    className="h-20 sm:h-24 min-w-[180px] sm:min-w-[210px] px-6 sm:px-7 rounded-2xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-emerald-300 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center shrink-0 group/card cursor-pointer"
+                    className="h-20 sm:h-24 min-w-[180px] sm:min-w-[210px] px-6 sm:px-7 rounded-2xl bg-white border border-slate-200/90 dark:border-slate-700 shadow-sm hover:shadow-xl hover:border-emerald-300 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center shrink-0 group/card cursor-pointer"
                     title={client.name}
                   >
                     {client.logoUrl ? (
@@ -413,9 +408,9 @@ export const PartnersSection: React.FC = () => {
         </div>
 
         {/* ── Bottom Trust Metric Ribbon ── */}
-        <div className="mt-16 pt-8 border-t border-slate-200/80 max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-slate-600 font-medium">
+        <div className="mt-16 pt-8 border-t border-slate-200/80 dark:border-slate-800 max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-slate-600 dark:text-slate-400 font-medium">
           <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#0077c8]" />
+            <CheckCircle2 className="w-4 h-4 text-[#0077c8] dark:text-sky-400" />
             <span>{t("pandai_partners_016")}</span>
           </div>
           <div className="flex items-center gap-2">

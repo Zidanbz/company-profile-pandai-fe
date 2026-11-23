@@ -9,10 +9,10 @@ import { Check, Building2, Users, Briefcase, Award } from "lucide-react";
 export const AboutSection: React.FC = () => {
   const t = useSiteText();
   return (
-    <section id="tentang" className="py-20 md:py-28 bg-white relative overflow-hidden scroll-mt-28">
+    <section id="tentang" className="py-20 md:py-28 bg-white dark:bg-slate-950 relative overflow-hidden scroll-mt-28">
       {/* Decorative Organic Wave Blobs in Background */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sky-50/70 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-sky-100/50 blur-3xl pointer-events-none" />
+      <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sky-50/70 dark:bg-slate-900/70 blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-sky-100/50 dark:bg-blue-950/30 blur-3xl pointer-events-none" />
 
       {/* Subtle Wavy Line SVG */}
       <div className="absolute inset-0 pointer-events-none opacity-25">
@@ -31,29 +31,29 @@ export const AboutSection: React.FC = () => {
           
           {/* Left: Building Photo Showcase */}
           <div className="lg:col-span-6">
-            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-sky-100 shadow-2xl group">
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-sky-100 dark:border-slate-800 shadow-2xl group">
               <img
                 src={t("pandai_about_001")}
                 alt={t("pandai_about_002")}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/60 flex items-center justify-between shadow-lg">
-                <span className="text-xs font-bold text-slate-800">{t("pandai_about_003")}</span>
-                <span className="text-[11px] font-semibold text-[#0077c8]">{t("pandai_about_004")}</span>
+              <div className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md px-4 py-2.5 rounded-2xl border border-white/60 dark:border-slate-700 flex items-center justify-between shadow-lg">
+                <span className="text-xs font-bold text-slate-800 dark:text-slate-200">{t("pandai_about_003")}</span>
+                <span className="text-[11px] font-semibold text-[#0077c8] dark:text-sky-400">{t("pandai_about_004")}</span>
               </div>
             </div>
           </div>
 
           {/* Right: Content & Checklist */}
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100">
+            <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-100 dark:border-slate-800">
               {t("pandai_about_005")}</div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
               {t("pandai_about_006")}</h2>
 
-            <p className="text-slate-600 leading-relaxed text-base sm:text-lg">
+            <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-base sm:text-lg">
               {t("pandai_about_007")}</p>
 
             {/* Checklist */}
@@ -65,10 +65,10 @@ export const AboutSection: React.FC = () => {
                 t("pandai_about_011"),
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
-                  <div className="w-5 h-5 rounded-full bg-sky-100 text-[#0077c8] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-5 h-5 rounded-full bg-sky-100 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 flex items-center justify-center shrink-0 mt-0.5">
                     <Check className="w-3.5 h-3.5 stroke-[2.5]" />
                   </div>
-                  <span className="text-slate-700 font-medium text-sm sm:text-base">
+                  <span className="text-slate-700 dark:text-slate-300 font-medium text-sm sm:text-base">
                     {item}
                   </span>
                 </div>
@@ -90,13 +90,13 @@ export const AboutSection: React.FC = () => {
               className={`p-6 sm:p-8 rounded-3xl border transition-all ${
                 i === 0
                   ? "bg-[#0077c8] text-white border-[#0077c8] shadow-lg shadow-[#0077c8]/20"
-                  : "bg-sky-50/70 border-sky-100 text-slate-800"
+                  : "bg-sky-50/70 dark:bg-slate-900/70 border-sky-100 dark:border-slate-800 text-slate-800 dark:text-slate-200"
               }`}
             >
-              <div className={`text-3xl sm:text-4xl font-black mb-1 ${i === 0 ? "text-white" : "text-[#0077c8]"}`}>
+              <div className={`text-3xl sm:text-4xl font-black mb-1 ${i === 0 ? "text-white" : "text-[#0077c8] dark:text-sky-400"}`}>
                 {stat.value}
               </div>
-              <div className={`text-xs sm:text-sm font-semibold ${i === 0 ? "text-sky-100" : "text-slate-600"}`}>
+              <div className={`text-xs sm:text-sm font-semibold ${i === 0 ? "text-sky-100" : "text-slate-600 dark:text-slate-400"}`}>
                 {stat.label}
               </div>
             </div>

@@ -42,7 +42,7 @@ const fallbackServices = [
   const SelectedIcon = selected?.Icon || Network;
 
   return (
-  <section id="layanan" className="relative bg-white scroll-mt-28">
+  <section id="layanan" className="relative bg-white dark:bg-slate-950 scroll-mt-28">
     <div className="relative isolate min-h-[calc(100svh-5rem)] overflow-hidden bg-[#062b50] text-white">
       <div className="absolute inset-0" aria-hidden="true">
         <img src={t("pandai_services_032")} alt="" className="h-full w-full object-cover object-center" />
@@ -53,7 +53,7 @@ const fallbackServices = [
       <div className="pointer-events-none absolute -right-36 top-20 h-[28rem] w-[28rem] rounded-full border border-cyan-100/15" aria-hidden="true" />
       <div className="pointer-events-none absolute -right-16 top-40 h-[20rem] w-[20rem] rounded-full border border-white/10" aria-hidden="true" />
       <div className="pointer-events-none absolute -left-40 top-1/3 h-96 w-96 rounded-full bg-sky-300/15 blur-[110px]" aria-hidden="true" />
-      <TopWave fillColor="fill-white" />
+      <TopWave fillColor="fill-white dark:fill-slate-950" />
 
       <div className="relative z-10 flex min-h-[calc(100svh-5rem)] items-center py-8 sm:py-10">
         <Container size="xl">
@@ -116,7 +116,7 @@ const fallbackServices = [
           </div>
         </Container>
       </div>
-      <BottomWave fillColor="fill-white" />
+      <BottomWave fillColor="fill-white dark:fill-slate-950" />
     </div>
   </section>
   );

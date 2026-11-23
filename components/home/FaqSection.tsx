@@ -16,20 +16,20 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-white relative">
+    <section id="faq" className="py-20 md:py-28 bg-white dark:bg-slate-950 relative">
       <Container size="xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Heading & CTA */}
           <div className="lg:col-span-5 space-y-5">
-            <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100">
+            <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-100 dark:border-slate-800">
               {t("pandai_faq_001")}
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight leading-snug">
               {t("pandai_faq_002")}
             </h2>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed">
               {t("pandai_faq_003")}
             </p>
 
@@ -70,20 +70,20 @@ export const FaqSection: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-sky-100 bg-white overflow-hidden shadow-sm transition-all"
+                  className="rounded-2xl border border-sky-100 dark:border-slate-800 bg-white dark:bg-slate-900 overflow-hidden shadow-sm transition-all"
                 >
                   <button
                     onClick={() => toggle(index)}
                     className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4"
                   >
-                    <span className="font-bold text-slate-800 text-sm sm:text-base">
+                    <span className="font-bold text-slate-800 dark:text-slate-200 text-sm sm:text-base">
                       {item.question}
                     </span>
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors ${
                         isOpen
                           ? "bg-[#f97316] text-white"
-                          : "bg-sky-50 text-[#0077c8]"
+                          : "bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400"
                       }`}
                     >
                       {isOpen ? (
@@ -102,7 +102,7 @@ export const FaqSection: React.FC = () => {
                         exit={{ opacity: 0, height: 0 }}
                         transition={{ duration: 0.2 }}
                       >
-                        <div className="px-5 sm:px-6 pb-6 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-50">
+                        <div className="px-5 sm:px-6 pb-6 pt-1 text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed border-t border-slate-50 dark:border-slate-800">
                           {item.answer}
                         </div>
                       </motion.div>

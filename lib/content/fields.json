@@ -674,9 +674,9 @@
   {
     "key": "pandai_partners_001",
     "group": "partners",
-    "label": "KOLABORASI &amp; REPUTASI",
+    "label": "KOLABORASI & REPUTASI",
     "type": "text",
-    "defaultValue": "KOLABORASI &amp; REPUTASI"
+    "defaultValue": "KOLABORASI & REPUTASI"
   },
   {
     "key": "pandai_partners_002",
@@ -702,23 +702,23 @@
   {
     "key": "pandai_partners_005",
     "group": "partners",
-    "label": "Mitra &amp; Partner",
+    "label": "Mitra & Partner",
     "type": "text",
-    "defaultValue": "Mitra &amp; Partner"
+    "defaultValue": "Mitra & Partner"
   },
   {
     "key": "pandai_partners_006",
     "group": "partners",
-    "label": "Teknologi &amp; Jaringan",
+    "label": "Teknologi & Jaringan",
     "type": "text",
-    "defaultValue": "Teknologi &amp; Jaringan"
+    "defaultValue": "Teknologi & Jaringan"
   },
   {
     "key": "pandai_partners_007",
     "group": "partners",
-    "label": "Infrastruktur &amp; Konektivitas",
+    "label": "Infrastruktur & Konektivitas",
     "type": "text",
-    "defaultValue": "Infrastruktur &amp; Konektivitas"
+    "defaultValue": "Infrastruktur & Konektivitas"
   },
   {
     "key": "pandai_partners_010",
@@ -730,16 +730,16 @@
   {
     "key": "pandai_partners_011",
     "group": "partners",
-    "label": "Client &amp; Institusi",
+    "label": "Client & Institusi",
     "type": "text",
-    "defaultValue": "Client &amp; Institusi"
+    "defaultValue": "Client & Institusi"
   },
   {
     "key": "pandai_partners_012",
     "group": "partners",
-    "label": "Perbankan &amp; Pemerintahan",
+    "label": "Perbankan & Pemerintahan",
     "type": "text",
-    "defaultValue": "Perbankan &amp; Pemerintahan"
+    "defaultValue": "Perbankan & Pemerintahan"
   },
   {
     "key": "pandai_partners_013",
@@ -751,9 +751,9 @@
   {
     "key": "pandai_partners_016",
     "group": "partners",
-    "label": "25+ Mitra Penyedia Teknologi Global &amp; Nasional",
+    "label": "25+ Mitra Penyedia Teknologi Global & Nasional",
     "type": "text",
-    "defaultValue": "25+ Mitra Penyedia Teknologi Global &amp; Nasional"
+    "defaultValue": "25+ Mitra Penyedia Teknologi Global & Nasional"
   },
   {
     "key": "pandai_partners_017",
@@ -765,9 +765,9 @@
   {
     "key": "pandai_partners_018",
     "group": "partners",
-    "label": "Dipercaya Institusi Finansial &amp; Pemerintahan Daerah",
+    "label": "Dipercaya Institusi Finansial & Pemerintahan Daerah",
     "type": "text",
-    "defaultValue": "Dipercaya Institusi Finansial &amp; Pemerintahan Daerah"
+    "defaultValue": "Dipercaya Institusi Finansial & Pemerintahan Daerah"
   },
   {
     "key": "pandai_blog_013",

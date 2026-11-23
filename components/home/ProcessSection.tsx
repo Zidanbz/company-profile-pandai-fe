@@ -35,7 +35,7 @@ export const ProcessSection: React.FC = () => {
   ];
 
   return (
-    <section id="proses" className="py-20 md:py-28 bg-white relative overflow-hidden scroll-mt-28">
+    <section id="proses" className="py-20 md:py-28 bg-white dark:bg-slate-950 relative overflow-hidden scroll-mt-28">
       {/* Subtle Wavy Watermark Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <svg viewBox="0 0 1440 400" fill="none" className="w-full h-full">
@@ -50,9 +50,9 @@ export const ProcessSection: React.FC = () => {
 
       <Container size="xl" className="relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100 shadow-sm">
+          <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-100 dark:border-slate-800 shadow-sm">
             {t("pandai_process_009")}</div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
             {t("pandai_process_010")}</h2>
         </div>
 
@@ -96,14 +96,14 @@ export const ProcessSection: React.FC = () => {
             {steps.map((s) => (
               <div key={s.number} className="flex flex-col items-center text-center px-2 group">
                 <div
-                  className={`w-14 h-14 rounded-2xl ${s.color} text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-${s.color}/30 mb-6 ring-8 ring-white group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
+                  className={`w-14 h-14 rounded-2xl ${s.color} text-white font-extrabold text-lg flex items-center justify-center shadow-lg shadow-${s.color}/30 mb-6 ring-8 ring-white dark:ring-slate-950 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
                 >
                   {s.number}
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100 mb-2">
                   {s.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-[220px]">
+                <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 leading-relaxed max-w-[220px]">
                   {s.desc}
                 </p>
               </div>

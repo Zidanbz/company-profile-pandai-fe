@@ -70,87 +70,87 @@ export const ContactSection: React.FC = () => {
   return (
     <section
       id="kontak"
-      className="py-20 md:py-28 bg-white relative scroll-mt-28"
+      className="py-20 md:py-28 bg-white dark:bg-slate-950 relative scroll-mt-28"
     >
       <Container size="xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Direct Info & Map Card */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-3">
-              <div className="inline-block px-3.5 py-1 rounded-full bg-white text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100 shadow-sm">
+              <div className="inline-block px-3.5 py-1 rounded-full bg-white dark:bg-slate-900 text-[#0077c8] dark:text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-100 dark:border-slate-800 shadow-sm">
                 {t("pandai_contact_001")}
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
                 {t("pandai_contact_002")}
               </h2>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-xl">
+              <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl">
                 {t("pandai_contact_003")}
               </p>
             </div>
 
             {/* 4 Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-white/90 p-5 rounded-2xl border border-sky-100/80 shadow-sm space-y-1">
+              <div className="bg-white/90 dark:bg-slate-900/90 p-5 rounded-2xl border border-sky-100/80 dark:border-slate-800 shadow-sm space-y-1">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {t("pandai_contact_004")}
                 </span>
-                <p className="text-sm font-bold text-[#0077c8]">
+                <p className="text-sm font-bold text-[#0077c8] dark:text-sky-400">
                   {t("contact_email")}
                 </p>
               </div>
 
-              <div className="bg-white/90 p-5 rounded-2xl border border-sky-100/80 shadow-sm space-y-1">
+              <div className="bg-white/90 dark:bg-slate-900/90 p-5 rounded-2xl border border-sky-100/80 dark:border-slate-800 shadow-sm space-y-1">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {t("pandai_contact_006")}
                 </span>
-                <p className="text-sm font-bold text-[#0077c8]">
+                <p className="text-sm font-bold text-[#0077c8] dark:text-sky-400">
                   {t("contact_phone")}
                 </p>
               </div>
 
-              <div className="bg-white/90 p-5 rounded-2xl border border-sky-100/80 shadow-sm space-y-1">
+              <div className="bg-white/90 dark:bg-slate-900/90 p-5 rounded-2xl border border-sky-100/80 dark:border-slate-800 shadow-sm space-y-1">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {t("pandai_contact_008")}
                 </span>
-                <p className="text-sm font-bold text-slate-800">
+                <p className="text-sm font-bold text-slate-800 dark:text-slate-200">
                   {t("contact_hours")}
                 </p>
               </div>
 
-              <div className="bg-white/90 p-5 rounded-2xl border border-sky-100/80 shadow-sm space-y-1">
+              <div className="bg-white/90 dark:bg-slate-900/90 p-5 rounded-2xl border border-sky-100/80 dark:border-slate-800 shadow-sm space-y-1">
                 <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
                   {t("pandai_contact_010")}
                 </span>
-                <p className="text-sm font-bold text-slate-800">
+                <p className="text-sm font-bold text-slate-800 dark:text-slate-200">
                   {t("contact_city")}
                 </p>
               </div>
             </div>
 
             {/* Office address & satellite map */}
-            <div className="bg-white/90 p-6 rounded-3xl border border-sky-100/80 shadow-sm space-y-4">
+            <div className="bg-white/90 dark:bg-slate-900/90 p-6 rounded-3xl border border-sky-100/80 dark:border-slate-800 shadow-sm space-y-4">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
                 {t("pandai_contact_012")}
               </span>
-              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-medium">
+              <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed font-medium">
                 {t("contact_address")}
               </p>
               <a
                 href={t("contact_maps_url")}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0077c8] hover:text-[#0284c7]"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0077c8] dark:text-sky-400 hover:text-[#0284c7]"
               >
                 {t("pandai_contact_015")}
                 <ArrowRight className="w-3.5 h-3.5" />
               </a>
 
-              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
-                <div className="flex items-center justify-between border-b border-slate-200 bg-white px-3 py-2 text-xs">
-                  <span className="font-semibold text-slate-700">
+              <div className="overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800">
+                <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 px-3 py-2 text-xs">
+                  <span className="font-semibold text-slate-700 dark:text-slate-300">
                     {t("pandai_contact_016")}
                   </span>
-                  <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-medium text-slate-500">
+                  <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-2 py-0.5 text-[10px] font-medium text-slate-500 dark:text-slate-400">
                     Satelit
                   </span>
                 </div>
@@ -167,23 +167,23 @@ export const ContactSection: React.FC = () => {
           </div>
 
           {/* Right Column: Contact Form */}
-          <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-7 border border-white/70 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.8)] text-slate-900">
-            <h3 className="text-xl font-bold text-slate-900 mb-6">
+          <div className="lg:col-span-5 bg-white dark:bg-slate-900 rounded-3xl p-5 sm:p-7 border border-white/70 dark:border-slate-800 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.8)] text-slate-900 dark:text-slate-100">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-6">
               {t("pandai_contact_017")}
             </h3>
 
             {isSuccess ? (
-              <div className="p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-center space-y-2">
+              <div className="p-6 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-900 text-center space-y-2">
                 <CheckCircle2 className="w-10 h-10 text-emerald-600 mx-auto" />
-                <h4 className="font-bold text-emerald-900 text-sm">
+                <h4 className="font-bold text-emerald-900 dark:text-emerald-200 text-sm">
                   {t("pandai_contact_018")}
                 </h4>
-                <p className="text-xs text-emerald-700">
+                <p className="text-xs text-emerald-700 dark:text-emerald-400">
                   {t("pandai_contact_019")}
                 </p>
                 <button
                   onClick={() => setIsSuccess(false)}
-                  className="mt-3 text-xs font-semibold text-[#0077c8] underline"
+                  className="mt-3 text-xs font-semibold text-[#0077c8] dark:text-sky-400 underline"
                 >
                   {t("pandai_contact_020")}
                 </button>
@@ -191,13 +191,13 @@ export const ContactSection: React.FC = () => {
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
                 {submitError && (
-                  <p role="alert" className="text-sm text-red-600">
+                  <p role="alert" className="text-sm text-red-600 dark:text-red-400">
                     {submitError}
                   </p>
                 )}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-xs font-medium text-slate-500 mb-1">
+                    <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
                       {t("pandai_contact_021")}
                     </label>
                     <input
@@ -208,11 +208,11 @@ export const ContactSection: React.FC = () => {
                         setFormData({ ...formData, name: e.target.value })
                       }
                       placeholder={t("pandai_contact_022")}
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 dark:bg-slate-950/50"
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-slate-500 mb-1">
+                    <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
                       {t("pandai_contact_023")}
                     </label>
                     <input
@@ -222,13 +222,13 @@ export const ContactSection: React.FC = () => {
                         setFormData({ ...formData, company: e.target.value })
                       }
                       placeholder={t("pandai_contact_024")}
-                      className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50"
+                      className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 dark:bg-slate-950/50"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 mb-1">
+                  <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
                     {t("pandai_contact_025")}
                   </label>
                   <input
@@ -239,12 +239,12 @@ export const ContactSection: React.FC = () => {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     placeholder={t("pandai_contact_026")}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 dark:bg-slate-950/50"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 mb-1">
+                  <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
                     {t("pandai_contact_027")}
                   </label>
                   <select
@@ -252,7 +252,7 @@ export const ContactSection: React.FC = () => {
                     onChange={(e) =>
                       setFormData({ ...formData, service: e.target.value })
                     }
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 dark:bg-slate-950/50"
                   >
                     <option value="">{t("pandai_contact_028")}</option>
                     {[
@@ -270,7 +270,7 @@ export const ContactSection: React.FC = () => {
                 </div>
 
                 <div>
-                  <label className="block text-xs font-medium text-slate-500 mb-1">
+                  <label className="block text-xs font-medium text-slate-500 dark:text-slate-400 mb-1">
                     {t("pandai_contact_034")}
                   </label>
                   <textarea
@@ -281,7 +281,7 @@ export const ContactSection: React.FC = () => {
                       setFormData({ ...formData, message: e.target.value })
                     }
                     placeholder={t("pandai_contact_035")}
-                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 text-sm focus:outline-none focus:ring-2 focus:ring-[#0077c8]/30 focus:border-[#0077c8] bg-slate-50/50 dark:bg-slate-950/50 resize-none"
                   />
                 </div>
 

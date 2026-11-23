@@ -8,14 +8,14 @@ import { Container } from "@/components/base/Container";
 export const GallerySection: React.FC = () => {
   const t = useSiteText();
   return (
-    <section id="galeri" className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section id="galeri" className="py-20 md:py-28 bg-white dark:bg-slate-950 relative overflow-hidden">
       <Container size="xl">
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-          <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100">
+          <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 dark:bg-slate-800 text-[#0077c8] dark:text-sky-400 text-xs font-bold uppercase tracking-wider border border-sky-100 dark:border-slate-800">
             {t("pandai_gallery_001")}</div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-slate-100 tracking-tight">
             {t("pandai_gallery_002")}</h2>
-          <p className="text-sm sm:text-base text-slate-500">
+          <p className="text-sm sm:text-base text-slate-500 dark:text-slate-400">
             {t("pandai_gallery_003")}</p>
         </div>
 
@@ -23,7 +23,7 @@ export const GallerySection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
           
           {/* Main Large Card (Left) */}
-          <div className="lg:col-span-6 rounded-[32px] overflow-hidden min-h-[380px] lg:min-h-full relative shadow-xl border border-sky-100 group">
+          <div className="lg:col-span-6 rounded-[32px] overflow-hidden min-h-[380px] lg:min-h-full relative shadow-xl border border-sky-100 dark:border-slate-800 group">
             <img
               src={t("pandai_gallery_004")}
               alt={t("pandai_gallery_005")}
@@ -42,7 +42,7 @@ export const GallerySection: React.FC = () => {
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
             
             {/* Card 1: Tim */}
-            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 group">
+            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 dark:border-slate-800 group">
               <img
                 src={t("pandai_gallery_008")}
                 alt={t("pandai_gallery_009")}
@@ -58,7 +58,7 @@ export const GallerySection: React.FC = () => {
             </div>
 
             {/* Card 2: Server */}
-            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 group">
+            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 dark:border-slate-800 group">
               <img
                 src={t("pandai_gallery_012")}
                 alt={t("pandai_gallery_013")}
@@ -74,7 +74,7 @@ export const GallerySection: React.FC = () => {
             </div>
 
             {/* Card 3: Fiber Optik */}
-            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 group">
+            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 dark:border-slate-800 group">
               <img
                 src={t("pandai_gallery_016")}
                 alt={t("pandai_gallery_017")}
@@ -90,7 +90,7 @@ export const GallerySection: React.FC = () => {
             </div>
 
             {/* Card 4: Software Dev */}
-            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 group">
+            <div className="rounded-[28px] overflow-hidden min-h-[200px] relative shadow-lg border border-sky-100 dark:border-slate-800 group">
               <img
                 src={t("pandai_gallery_020")}
                 alt={t("pandai_gallery_021")}

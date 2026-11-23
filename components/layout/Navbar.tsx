@@ -6,6 +6,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ArrowRight } from "lucide-react";
+import { ThemeToggle } from "@/components/theme/ThemeToggle";
 import { cn } from "@/lib/utils/cn";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -82,8 +83,8 @@ export const Navbar: React.FC = () => {
         className={cn(
           "max-w-6xl mx-auto rounded-full transition-all duration-300 pointer-events-auto",
           isScrolled
-            ? "bg-white/95 backdrop-blur-xl border border-sky-100 shadow-[0_10px_30px_-5px_rgba(0,119,200,0.12)] py-2.5 px-6"
-            : "bg-white/90 backdrop-blur-md border border-white/80 shadow-[0_4px_20px_rgba(0,0,0,0.04)] py-3 px-6 sm:px-8"
+            ? "bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-sky-100 dark:border-slate-700 shadow-[0_10px_30px_-5px_rgba(0,119,200,0.12)] py-2.5 px-6"
+            : "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border border-white/80 dark:border-slate-700 shadow-[0_4px_20px_rgba(0,0,0,0.04)] py-3 px-6 sm:px-8"
         )}
       >
         <div className="grid grid-cols-[1fr_auto_1fr] items-center">
@@ -97,17 +98,17 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {/* Nav Links Desktop */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href, link.id)}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-[#0066ad]",
+                  "text-sm font-medium transition-colors hover:text-[#0066ad] dark:hover:text-sky-300",
                   activeSection === link.id
-                    ? "text-[#0066ad] font-semibold"
-                    : "text-slate-600"
+                    ? "text-[#0066ad] dark:text-sky-400 font-semibold"
+                    : "text-slate-600 dark:text-slate-300"
                 )}
               >
                 {link.label}
@@ -116,7 +117,8 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Right Action */}
-          <div className="hidden md:flex items-center gap-3 justify-self-end">
+          <div className="hidden lg:flex items-center gap-3 justify-self-end">
+            <ThemeToggle />
             <a
               href={t("pandai_navigation_009")}
               onClick={(e) => handleNavClick(e, "/#kontak", "kontak")}
@@ -126,11 +128,14 @@ export const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center gap-2 justify-self-end col-start-3">
+          <div className="flex lg:hidden items-center gap-2 justify-self-end col-start-3">
+            <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 transition-colors"
+              className="p-2 rounded-lg text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               aria-label={t("pandai_navigation_011")}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="public-mobile-menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -142,10 +147,11 @@ export const Navbar: React.FC = () => {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
+            id="public-mobile-menu"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden mt-2 max-w-6xl mx-auto bg-white/95 backdrop-blur-xl border border-sky-100 rounded-3xl p-5 shadow-xl pointer-events-auto"
+            className="lg:hidden mt-2 max-w-6xl mx-auto bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl border border-sky-100 dark:border-slate-700 rounded-3xl p-5 shadow-xl pointer-events-auto"
           >
             <div className="flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -156,12 +162,12 @@ export const Navbar: React.FC = () => {
                     handleNavClick(e, link.href, link.id);
                     setMobileMenuOpen(false);
                   }}
-                  className="px-3 py-2 rounded-xl text-base font-medium text-slate-700 hover:text-[#0077c8] hover:bg-sky-50 transition-colors"
+                  className="px-3 py-2 rounded-xl text-base font-medium text-slate-700 dark:text-slate-200 hover:text-[#0077c8] dark:hover:text-sky-300 hover:bg-sky-50 dark:hover:bg-slate-800 transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="pt-2 border-t border-slate-100">
+              <div className="pt-2 border-t border-slate-100 dark:border-slate-700">
                 <a
                   href={t("pandai_navigation_012")}
                   onClick={(e) => {

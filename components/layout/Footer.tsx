@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-[#062b50] text-white relative">
       {/* Top Wave Entry from Contact Section */}
-      <TopWave fillColor="fill-white" />
+      <TopWave fillColor="fill-white dark:fill-slate-950" />
 
       {/* Main Footer */}
       <div className="py-14 sm:py-16 border-b border-white/15">

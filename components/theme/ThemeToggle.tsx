@@ -15,7 +15,7 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
 
   if (!mounted) {
     return (
-      <div className={`w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 animate-pulse ${className}`} />
+      <div className={`w-9 h-9 shrink-0 rounded-full bg-slate-100 dark:bg-slate-800 animate-pulse ${className}`} />
     );
   }
 
@@ -24,9 +24,10 @@ export function ThemeToggle({ className = "" }: { className?: string }) {
   return (
     <button
       type="button"
+      aria-pressed={isDark}
       onClick={() => setTheme(isDark ? "light" : "dark")}
       aria-label={isDark ? "Ganti ke mode terang" : "Ganti ke mode gelap"}
-      className={`relative inline-flex items-center justify-center w-9 h-9 rounded-full border border-slate-200/80 dark:border-slate-700/80 bg-white/90 dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 shadow-xs backdrop-blur-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer ${className}`}
+      className={`relative inline-flex items-center justify-center w-9 h-9 shrink-0 rounded-full border border-slate-200/80 dark:border-slate-700/80 bg-white/90 dark:bg-slate-900/90 text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 shadow-xs backdrop-blur-md transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900 hover:scale-105 active:scale-95 cursor-pointer ${className}`}
       title={isDark ? "Mode Terang (Light Mode)" : "Mode Gelap (Dark Mode)"}
     >
       <motion.div
