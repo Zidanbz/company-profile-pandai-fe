@@ -1,0 +1,1479 @@
+[
+  {
+    "key": "pandai_hero_001",
+    "group": "hero",
+    "label": "Gambar: pandai-hero-bg.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-hero-bg.jpg"
+  },
+  {
+    "key": "pandai_hero_002",
+    "group": "hero",
+    "label": "Deskripsi gambar: Infrastruktur Data Center & Server PT Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "Infrastruktur Data Center & Server PT Pintu Data Indonesia"
+  },
+  {
+    "key": "pandai_hero_003",
+    "group": "hero",
+    "label": "TECHNOLOGY & IT SOLUTIONS",
+    "type": "text",
+    "defaultValue": "TECHNOLOGY & IT SOLUTIONS"
+  },
+  {
+    "key": "pandai_hero_004",
+    "group": "hero",
+    "label": "Infrastruktur & solusi digital untuk bisnis yang bertumbuh",
+    "type": "text",
+    "defaultValue": "Infrastruktur & solusi digital untuk bisnis yang bertumbuh"
+  },
+  {
+    "key": "pandai_hero_005",
+    "group": "hero",
+    "label": "Dari konsultasi IT, jaringan fiber optik, data center, hingga cloud dan pengembangan peran",
+    "type": "text",
+    "defaultValue": "Dari konsultasi IT, jaringan fiber optik, data center, hingga cloud dan pengembangan perangkat lunak — dalam satu mitra terpercaya."
+  },
+  {
+    "key": "pandai_hero_006",
+    "group": "hero",
+    "label": "Tujuan tautan: #kontak",
+    "type": "url",
+    "defaultValue": "#kontak"
+  },
+  {
+    "key": "pandai_hero_007",
+    "group": "hero",
+    "label": "Jadwalkan Konsultasi",
+    "type": "text",
+    "defaultValue": "Jadwalkan Konsultasi"
+  },
+  {
+    "key": "pandai_hero_008",
+    "group": "hero",
+    "label": "Tujuan tautan: #layanan",
+    "type": "url",
+    "defaultValue": "#layanan"
+  },
+  {
+    "key": "pandai_hero_009",
+    "group": "hero",
+    "label": "Jelajahi Layanan",
+    "type": "text",
+    "defaultValue": "Jelajahi Layanan"
+  },
+  {
+    "key": "pandai_hero_010",
+    "group": "hero",
+    "label": "Tim profesional",
+    "type": "text",
+    "defaultValue": "Tim profesional"
+  },
+  {
+    "key": "pandai_hero_011",
+    "group": "hero",
+    "label": "Respons cepat",
+    "type": "text",
+    "defaultValue": "Respons cepat"
+  },
+  {
+    "key": "pandai_hero_012",
+    "group": "hero",
+    "label": "Standar kualitas tinggi",
+    "type": "text",
+    "defaultValue": "Standar kualitas tinggi"
+  },
+  {
+    "key": "pandai_hero_013",
+    "group": "hero",
+    "label": "20+",
+    "type": "text",
+    "defaultValue": "20+"
+  },
+  {
+    "key": "pandai_hero_014",
+    "group": "hero",
+    "label": "Klien puas",
+    "type": "text",
+    "defaultValue": "Klien puas"
+  },
+  {
+    "key": "pandai_hero_015",
+    "group": "hero",
+    "label": "25",
+    "type": "text",
+    "defaultValue": "25"
+  },
+  {
+    "key": "pandai_hero_016",
+    "group": "hero",
+    "label": "Proyek selesai",
+    "type": "text",
+    "defaultValue": "Proyek selesai"
+  },
+  {
+    "key": "pandai_hero_017",
+    "group": "hero",
+    "label": "PANDAI",
+    "type": "text",
+    "defaultValue": "PANDAI"
+  },
+  {
+    "key": "pandai_hero_018",
+    "group": "hero",
+    "label": "Konsultasi",
+    "type": "text",
+    "defaultValue": "Konsultasi"
+  },
+  {
+    "key": "pandai_hero_019",
+    "group": "hero",
+    "label": "Fiber Optik",
+    "type": "text",
+    "defaultValue": "Fiber Optik"
+  },
+  {
+    "key": "pandai_hero_020",
+    "group": "hero",
+    "label": "Cloud & VPS",
+    "type": "text",
+    "defaultValue": "Cloud & VPS"
+  },
+  {
+    "key": "pandai_hero_021",
+    "group": "hero",
+    "label": "Data Center",
+    "type": "text",
+    "defaultValue": "Data Center"
+  },
+  {
+    "key": "pandai_hero_022",
+    "group": "hero",
+    "label": "Software",
+    "type": "text",
+    "defaultValue": "Software"
+  },
+  {
+    "key": "pandai_hero_023",
+    "group": "hero",
+    "label": "01",
+    "type": "text",
+    "defaultValue": "01"
+  },
+  {
+    "key": "pandai_hero_024",
+    "group": "hero",
+    "label": "Profesional",
+    "type": "text",
+    "defaultValue": "Profesional"
+  },
+  {
+    "key": "pandai_hero_025",
+    "group": "hero",
+    "label": "Tim berpengalaman",
+    "type": "text",
+    "defaultValue": "Tim berpengalaman"
+  },
+  {
+    "key": "pandai_hero_026",
+    "group": "hero",
+    "label": "02",
+    "type": "text",
+    "defaultValue": "02"
+  },
+  {
+    "key": "pandai_hero_027",
+    "group": "hero",
+    "label": "Fast",
+    "type": "text",
+    "defaultValue": "Fast"
+  },
+  {
+    "key": "pandai_hero_028",
+    "group": "hero",
+    "label": "Respons & eksekusi cepat",
+    "type": "text",
+    "defaultValue": "Respons & eksekusi cepat"
+  },
+  {
+    "key": "pandai_hero_029",
+    "group": "hero",
+    "label": "03",
+    "type": "text",
+    "defaultValue": "03"
+  },
+  {
+    "key": "pandai_hero_030",
+    "group": "hero",
+    "label": "Simpel",
+    "type": "text",
+    "defaultValue": "Simpel"
+  },
+  {
+    "key": "pandai_hero_031",
+    "group": "hero",
+    "label": "Proses tanpa ribet",
+    "type": "text",
+    "defaultValue": "Proses tanpa ribet"
+  },
+  {
+    "key": "pandai_hero_032",
+    "group": "hero",
+    "label": "04",
+    "type": "text",
+    "defaultValue": "04"
+  },
+  {
+    "key": "pandai_hero_033",
+    "group": "hero",
+    "label": "Good Quality",
+    "type": "text",
+    "defaultValue": "Good Quality"
+  },
+  {
+    "key": "pandai_hero_034",
+    "group": "hero",
+    "label": "Standar tinggi",
+    "type": "text",
+    "defaultValue": "Standar tinggi"
+  },
+  {
+    "key": "pandai_about_001",
+    "group": "about",
+    "label": "Gambar: pandai-office.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-office.jpg"
+  },
+  {
+    "key": "pandai_about_002",
+    "group": "about",
+    "label": "Deskripsi gambar: Kantor PT Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "Kantor PT Pintu Data Indonesia"
+  },
+  {
+    "key": "pandai_about_003",
+    "group": "about",
+    "label": "Kantor Pusat Pandai",
+    "type": "text",
+    "defaultValue": "Kantor Pusat Pandai"
+  },
+  {
+    "key": "pandai_about_004",
+    "group": "about",
+    "label": "Makassar, Sulawesi Selatan",
+    "type": "text",
+    "defaultValue": "Makassar, Sulawesi Selatan"
+  },
+  {
+    "key": "pandai_about_005",
+    "group": "about",
+    "label": "TENTANG KAMI",
+    "type": "text",
+    "defaultValue": "TENTANG KAMI"
+  },
+  {
+    "key": "pandai_about_006",
+    "group": "about",
+    "label": "PT Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "PT Pintu Data Indonesia"
+  },
+  {
+    "key": "pandai_about_007",
+    "group": "about",
+    "label": "PANDAI adalah perusahaan layanan teknologi informasi yang menyediakan solusi komprehensif ",
+    "type": "text",
+    "defaultValue": "PANDAI adalah perusahaan layanan teknologi informasi yang menyediakan solusi komprehensif untuk kebutuhan infrastruktur dan digital bisnis Anda."
+  },
+  {
+    "key": "pandai_about_008",
+    "group": "about",
+    "label": "Konsultasi IT & optimalisasi infrastruktur",
+    "type": "text",
+    "defaultValue": "Konsultasi IT & optimalisasi infrastruktur"
+  },
+  {
+    "key": "pandai_about_009",
+    "group": "about",
+    "label": "Pemasangan kabel serat optik",
+    "type": "text",
+    "defaultValue": "Pemasangan kabel serat optik"
+  },
+  {
+    "key": "pandai_about_010",
+    "group": "about",
+    "label": "Pengelolaan data center & penyediaan VPS",
+    "type": "text",
+    "defaultValue": "Pengelolaan data center & penyediaan VPS"
+  },
+  {
+    "key": "pandai_about_011",
+    "group": "about",
+    "label": "Pengembangan perangkat lunak",
+    "type": "text",
+    "defaultValue": "Pengembangan perangkat lunak"
+  },
+  {
+    "key": "pandai_about_012",
+    "group": "about",
+    "label": "20+",
+    "type": "text",
+    "defaultValue": "20+"
+  },
+  {
+    "key": "pandai_about_013",
+    "group": "about",
+    "label": "Klien puas",
+    "type": "text",
+    "defaultValue": "Klien puas"
+  },
+  {
+    "key": "pandai_about_014",
+    "group": "about",
+    "label": "25",
+    "type": "text",
+    "defaultValue": "25"
+  },
+  {
+    "key": "pandai_about_015",
+    "group": "about",
+    "label": "Proyek selesai",
+    "type": "text",
+    "defaultValue": "Proyek selesai"
+  },
+  {
+    "key": "pandai_about_016",
+    "group": "about",
+    "label": "20+",
+    "type": "text",
+    "defaultValue": "20+"
+  },
+  {
+    "key": "pandai_about_017",
+    "group": "about",
+    "label": "Perusahaan mitra",
+    "type": "text",
+    "defaultValue": "Perusahaan mitra"
+  },
+  {
+    "key": "pandai_about_018",
+    "group": "about",
+    "label": "15+",
+    "type": "text",
+    "defaultValue": "15+"
+  },
+  {
+    "key": "pandai_about_019",
+    "group": "about",
+    "label": "Anggota tim",
+    "type": "text",
+    "defaultValue": "Anggota tim"
+  },
+  {
+    "key": "pandai_services_032",
+    "group": "services",
+    "label": "Gambar: pandai-hero-bg.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-hero-bg.jpg"
+  },
+  {
+    "key": "pandai_services_033",
+    "group": "services",
+    "label": "Layanan Kami",
+    "type": "text",
+    "defaultValue": "Layanan Kami"
+  },
+  {
+    "key": "pandai_services_034",
+    "group": "services",
+    "label": "Infrastruktur digital untuk bisnis yang",
+    "type": "text",
+    "defaultValue": "Infrastruktur digital untuk bisnis yang"
+  },
+  {
+    "key": "pandai_services_035",
+    "group": "services",
+    "label": "bertumbuh.",
+    "type": "text",
+    "defaultValue": "bertumbuh."
+  },
+  {
+    "key": "pandai_services_036",
+    "group": "services",
+    "label": "Dari cloud dan jaringan hingga konsultasi dan software, satukan kebutuhan teknologi bisnis",
+    "type": "text",
+    "defaultValue": "Dari cloud dan jaringan hingga konsultasi dan software, satukan kebutuhan teknologi bisnis Anda bersama satu mitra terpercaya."
+  },
+  {
+    "key": "pandai_services_037",
+    "group": "services",
+    "label": "Tujuan tautan: #kontak",
+    "type": "url",
+    "defaultValue": "#kontak"
+  },
+  {
+    "key": "pandai_services_038",
+    "group": "services",
+    "label": "Diskusikan kebutuhan Anda",
+    "type": "text",
+    "defaultValue": "Diskusikan kebutuhan Anda"
+  },
+  {
+    "key": "pandai_services_039",
+    "group": "services",
+    "label": "Tim berpengalaman",
+    "type": "text",
+    "defaultValue": "Tim berpengalaman"
+  },
+  {
+    "key": "pandai_services_040",
+    "group": "services",
+    "label": "Respons cepat",
+    "type": "text",
+    "defaultValue": "Respons cepat"
+  },
+  {
+    "key": "pandai_services_041",
+    "group": "services",
+    "label": "SLA terjamin",
+    "type": "text",
+    "defaultValue": "SLA terjamin"
+  },
+  {
+    "key": "pandai_process_001",
+    "group": "process",
+    "label": "Konsultasi",
+    "type": "text",
+    "defaultValue": "Konsultasi"
+  },
+  {
+    "key": "pandai_process_002",
+    "group": "process",
+    "label": "Memahami kebutuhan dan target bisnis Anda.",
+    "type": "text",
+    "defaultValue": "Memahami kebutuhan dan target bisnis Anda."
+  },
+  {
+    "key": "pandai_process_003",
+    "group": "process",
+    "label": "Perancangan",
+    "type": "text",
+    "defaultValue": "Perancangan"
+  },
+  {
+    "key": "pandai_process_004",
+    "group": "process",
+    "label": "Menyusun solusi dan arsitektur yang tepat.",
+    "type": "text",
+    "defaultValue": "Menyusun solusi dan arsitektur yang tepat."
+  },
+  {
+    "key": "pandai_process_005",
+    "group": "process",
+    "label": "Implementasi",
+    "type": "text",
+    "defaultValue": "Implementasi"
+  },
+  {
+    "key": "pandai_process_006",
+    "group": "process",
+    "label": "Pemasangan dan pengembangan oleh tim ahli.",
+    "type": "text",
+    "defaultValue": "Pemasangan dan pengembangan oleh tim ahli."
+  },
+  {
+    "key": "pandai_process_007",
+    "group": "process",
+    "label": "Dukungan",
+    "type": "text",
+    "defaultValue": "Dukungan"
+  },
+  {
+    "key": "pandai_process_008",
+    "group": "process",
+    "label": "Pemantauan dan bantuan berkelanjutan.",
+    "type": "text",
+    "defaultValue": "Pemantauan dan bantuan berkelanjutan."
+  },
+  {
+    "key": "pandai_process_009",
+    "group": "process",
+    "label": "CARA KERJA",
+    "type": "text",
+    "defaultValue": "CARA KERJA"
+  },
+  {
+    "key": "pandai_process_010",
+    "group": "process",
+    "label": "Proses yang jelas dan terukur",
+    "type": "text",
+    "defaultValue": "Proses yang jelas dan terukur"
+  },
+  {
+    "key": "pandai_gallery_001",
+    "group": "gallery",
+    "label": "GALERI",
+    "type": "text",
+    "defaultValue": "GALERI"
+  },
+  {
+    "key": "pandai_gallery_002",
+    "group": "gallery",
+    "label": "Sekilas tentang Pandai",
+    "type": "text",
+    "defaultValue": "Sekilas tentang Pandai"
+  },
+  {
+    "key": "pandai_gallery_003",
+    "group": "gallery",
+    "label": "Kantor, tim, dan pekerjaan lapangan kami.",
+    "type": "text",
+    "defaultValue": "Kantor, tim, dan pekerjaan lapangan kami."
+  },
+  {
+    "key": "pandai_gallery_004",
+    "group": "gallery",
+    "label": "Gambar: pandai-office.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-office.jpg"
+  },
+  {
+    "key": "pandai_gallery_005",
+    "group": "gallery",
+    "label": "Deskripsi gambar: Foto kantor Pandai",
+    "type": "text",
+    "defaultValue": "Foto kantor Pandai"
+  },
+  {
+    "key": "pandai_gallery_006",
+    "group": "gallery",
+    "label": "KANTOR PUSAT",
+    "type": "text",
+    "defaultValue": "KANTOR PUSAT"
+  },
+  {
+    "key": "pandai_gallery_007",
+    "group": "gallery",
+    "label": "Foto Kantor Pandai · Gedung Utama",
+    "type": "text",
+    "defaultValue": "Foto Kantor Pandai · Gedung Utama"
+  },
+  {
+    "key": "pandai_gallery_008",
+    "group": "gallery",
+    "label": "Gambar: pandai-consulting.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-consulting.jpg"
+  },
+  {
+    "key": "pandai_gallery_009",
+    "group": "gallery",
+    "label": "Deskripsi gambar: Foto tim kami",
+    "type": "text",
+    "defaultValue": "Foto tim kami"
+  },
+  {
+    "key": "pandai_gallery_010",
+    "group": "gallery",
+    "label": "TIM AHLI",
+    "type": "text",
+    "defaultValue": "TIM AHLI"
+  },
+  {
+    "key": "pandai_gallery_011",
+    "group": "gallery",
+    "label": "Sesi Konsultasi & Kolaborasi",
+    "type": "text",
+    "defaultValue": "Sesi Konsultasi & Kolaborasi"
+  },
+  {
+    "key": "pandai_gallery_012",
+    "group": "gallery",
+    "label": "Gambar: pandai-cloud.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-cloud.jpg"
+  },
+  {
+    "key": "pandai_gallery_013",
+    "group": "gallery",
+    "label": "Deskripsi gambar: Foto ruang server",
+    "type": "text",
+    "defaultValue": "Foto ruang server"
+  },
+  {
+    "key": "pandai_gallery_014",
+    "group": "gallery",
+    "label": "INFRASTRUKTUR",
+    "type": "text",
+    "defaultValue": "INFRASTRUKTUR"
+  },
+  {
+    "key": "pandai_gallery_015",
+    "group": "gallery",
+    "label": "Ruang Server & Data Center",
+    "type": "text",
+    "defaultValue": "Ruang Server & Data Center"
+  },
+  {
+    "key": "pandai_gallery_016",
+    "group": "gallery",
+    "label": "Gambar: pandai-fiber.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-fiber.jpg"
+  },
+  {
+    "key": "pandai_gallery_017",
+    "group": "gallery",
+    "label": "Deskripsi gambar: Foto instalasi fiber optik",
+    "type": "text",
+    "defaultValue": "Foto instalasi fiber optik"
+  },
+  {
+    "key": "pandai_gallery_018",
+    "group": "gallery",
+    "label": "JARINGAN",
+    "type": "text",
+    "defaultValue": "JARINGAN"
+  },
+  {
+    "key": "pandai_gallery_019",
+    "group": "gallery",
+    "label": "Instalasi Kabel Serat Optik",
+    "type": "text",
+    "defaultValue": "Instalasi Kabel Serat Optik"
+  },
+  {
+    "key": "pandai_gallery_020",
+    "group": "gallery",
+    "label": "Gambar: pandai-software.jpg",
+    "type": "image",
+    "defaultValue": "/images/pandai-software.jpg"
+  },
+  {
+    "key": "pandai_gallery_021",
+    "group": "gallery",
+    "label": "Deskripsi gambar: Foto kegiatan proyek",
+    "type": "text",
+    "defaultValue": "Foto kegiatan proyek"
+  },
+  {
+    "key": "pandai_gallery_022",
+    "group": "gallery",
+    "label": "PENGEMBANGAN",
+    "type": "text",
+    "defaultValue": "PENGEMBANGAN"
+  },
+  {
+    "key": "pandai_gallery_023",
+    "group": "gallery",
+    "label": "Kegiatan Proyek Perangkat Lunak",
+    "type": "text",
+    "defaultValue": "Kegiatan Proyek Perangkat Lunak"
+  },
+  {
+    "key": "pandai_partners_001",
+    "group": "partners",
+    "label": "KOLABORASI &amp; REPUTASI",
+    "type": "text",
+    "defaultValue": "KOLABORASI &amp; REPUTASI"
+  },
+  {
+    "key": "pandai_partners_002",
+    "group": "partners",
+    "label": "Didukung Mitra Unggul,",
+    "type": "text",
+    "defaultValue": "Didukung Mitra Unggul,"
+  },
+  {
+    "key": "pandai_partners_003",
+    "group": "partners",
+    "label": "Dipercaya Klien Nasional",
+    "type": "text",
+    "defaultValue": "Dipercaya Klien Nasional"
+  },
+  {
+    "key": "pandai_partners_004",
+    "group": "partners",
+    "label": "Sinergi terintegrasi bersama penyedia infrastruktur jaringan tier-1, serta komitmen melaya",
+    "type": "text",
+    "defaultValue": "Sinergi terintegrasi bersama penyedia infrastruktur jaringan tier-1, serta komitmen melayani institusi perbankan, BUMN, dan pemerintahan."
+  },
+  {
+    "key": "pandai_partners_005",
+    "group": "partners",
+    "label": "Mitra &amp; Partner",
+    "type": "text",
+    "defaultValue": "Mitra &amp; Partner"
+  },
+  {
+    "key": "pandai_partners_006",
+    "group": "partners",
+    "label": "Teknologi &amp; Jaringan",
+    "type": "text",
+    "defaultValue": "Teknologi &amp; Jaringan"
+  },
+  {
+    "key": "pandai_partners_007",
+    "group": "partners",
+    "label": "Infrastruktur &amp; Konektivitas",
+    "type": "text",
+    "defaultValue": "Infrastruktur &amp; Konektivitas"
+  },
+  {
+    "key": "pandai_partners_010",
+    "group": "partners",
+    "label": "Sinergi Ekosistem",
+    "type": "text",
+    "defaultValue": "Sinergi Ekosistem"
+  },
+  {
+    "key": "pandai_partners_011",
+    "group": "partners",
+    "label": "Client &amp; Institusi",
+    "type": "text",
+    "defaultValue": "Client &amp; Institusi"
+  },
+  {
+    "key": "pandai_partners_012",
+    "group": "partners",
+    "label": "Perbankan &amp; Pemerintahan",
+    "type": "text",
+    "defaultValue": "Perbankan &amp; Pemerintahan"
+  },
+  {
+    "key": "pandai_partners_013",
+    "group": "partners",
+    "label": "Enterprise SLA",
+    "type": "text",
+    "defaultValue": "Enterprise SLA"
+  },
+  {
+    "key": "pandai_partners_016",
+    "group": "partners",
+    "label": "25+ Mitra Penyedia Teknologi Global &amp; Nasional",
+    "type": "text",
+    "defaultValue": "25+ Mitra Penyedia Teknologi Global &amp; Nasional"
+  },
+  {
+    "key": "pandai_partners_017",
+    "group": "partners",
+    "label": "Konektivitas Dedicated Bergaransi SLA 99.8%",
+    "type": "text",
+    "defaultValue": "Konektivitas Dedicated Bergaransi SLA 99.8%"
+  },
+  {
+    "key": "pandai_partners_018",
+    "group": "partners",
+    "label": "Dipercaya Institusi Finansial &amp; Pemerintahan Daerah",
+    "type": "text",
+    "defaultValue": "Dipercaya Institusi Finansial &amp; Pemerintahan Daerah"
+  },
+  {
+    "key": "pandai_blog_013",
+    "group": "blog",
+    "label": "BLOG & INSIGHT",
+    "type": "text",
+    "defaultValue": "BLOG & INSIGHT"
+  },
+  {
+    "key": "pandai_blog_014",
+    "group": "blog",
+    "label": "Wawasan teknologi untuk bisnis Anda",
+    "type": "text",
+    "defaultValue": "Wawasan teknologi untuk bisnis Anda"
+  },
+  {
+    "key": "pandai_blog_015",
+    "group": "blog",
+    "label": "Artikel singkat seputar infrastruktur, jaringan, cloud, dan pengembangan perangkat lunak.",
+    "type": "text",
+    "defaultValue": "Artikel singkat seputar infrastruktur, jaringan, cloud, dan pengembangan perangkat lunak."
+  },
+  {
+    "key": "pandai_blog_016",
+    "group": "blog",
+    "label": "Lihat semua artikel",
+    "type": "text",
+    "defaultValue": "Lihat semua artikel"
+  },
+  {
+    "key": "pandai_blog_017",
+    "group": "blog",
+    "label": "Baca",
+    "type": "text",
+    "defaultValue": "Baca"
+  },
+  {
+    "key": "pandai_faq_001",
+    "group": "faq",
+    "label": "FAQ",
+    "type": "text",
+    "defaultValue": "FAQ"
+  },
+  {
+    "key": "pandai_faq_002",
+    "group": "faq",
+    "label": "Pertanyaan yang sering diajukan",
+    "type": "text",
+    "defaultValue": "Pertanyaan yang sering diajukan"
+  },
+  {
+    "key": "pandai_faq_003",
+    "group": "faq",
+    "label": "Belum menemukan jawabannya? Tim kami siap membantu langsung.",
+    "type": "text",
+    "defaultValue": "Belum menemukan jawabannya? Tim kami siap membantu langsung."
+  },
+  {
+    "key": "pandai_faq_004",
+    "group": "faq",
+    "label": "Tujuan tautan: #kontak",
+    "type": "url",
+    "defaultValue": "#kontak"
+  },
+  {
+    "key": "pandai_faq_005",
+    "group": "faq",
+    "label": "Tanya Tim Kami",
+    "type": "text",
+    "defaultValue": "Tanya Tim Kami"
+  },
+  {
+    "key": "pandai_cta_001",
+    "group": "cta",
+    "label": "Mari mulai produk hebat bersama Pandai",
+    "type": "text",
+    "defaultValue": "Mari mulai produk hebat bersama Pandai"
+  },
+  {
+    "key": "pandai_cta_002",
+    "group": "cta",
+    "label": "Konsultasikan infrastruktur dan solusi digital Anda bersama tim ahli kami sekarang.",
+    "type": "text",
+    "defaultValue": "Konsultasikan infrastruktur dan solusi digital Anda bersama tim ahli kami sekarang."
+  },
+  {
+    "key": "pandai_cta_003",
+    "group": "cta",
+    "label": "Tujuan tautan: #kontak",
+    "type": "url",
+    "defaultValue": "#kontak"
+  },
+  {
+    "key": "pandai_cta_004",
+    "group": "cta",
+    "label": "Get Started",
+    "type": "text",
+    "defaultValue": "Get Started"
+  },
+  {
+    "key": "pandai_contact_001",
+    "group": "contact",
+    "label": "HUBUNGI KAMI",
+    "type": "text",
+    "defaultValue": "HUBUNGI KAMI"
+  },
+  {
+    "key": "pandai_contact_002",
+    "group": "contact",
+    "label": "Bicara dengan tim Pandai",
+    "type": "text",
+    "defaultValue": "Bicara dengan tim Pandai"
+  },
+  {
+    "key": "pandai_contact_003",
+    "group": "contact",
+    "label": "Ceritakan kebutuhan Anda, kami siap membantu merancang solusinya.",
+    "type": "text",
+    "defaultValue": "Ceritakan kebutuhan Anda, kami siap membantu merancang solusinya."
+  },
+  {
+    "key": "pandai_contact_004",
+    "group": "contact",
+    "label": "EMAIL",
+    "type": "text",
+    "defaultValue": "EMAIL"
+  },
+  {
+    "key": "contact_email",
+    "group": "contact",
+    "label": "info@pandai.id",
+    "type": "text",
+    "defaultValue": "info@pandai.id"
+  },
+  {
+    "key": "pandai_contact_006",
+    "group": "contact",
+    "label": "TELEPON",
+    "type": "text",
+    "defaultValue": "TELEPON"
+  },
+  {
+    "key": "contact_phone",
+    "group": "contact",
+    "label": "+62 812-4475-3517",
+    "type": "text",
+    "defaultValue": "+62 812-4475-3517"
+  },
+  {
+    "key": "pandai_contact_008",
+    "group": "contact",
+    "label": "JAM OPERASIONAL",
+    "type": "text",
+    "defaultValue": "JAM OPERASIONAL"
+  },
+  {
+    "key": "contact_hours",
+    "group": "contact",
+    "label": "08:30 - 17:00",
+    "type": "text",
+    "defaultValue": "08:30 - 17:00"
+  },
+  {
+    "key": "pandai_contact_010",
+    "group": "contact",
+    "label": "LOKASI",
+    "type": "text",
+    "defaultValue": "LOKASI"
+  },
+  {
+    "key": "contact_city",
+    "group": "contact",
+    "label": "Makassar, Sulawesi Selatan",
+    "type": "text",
+    "defaultValue": "Makassar, Sulawesi Selatan"
+  },
+  {
+    "key": "pandai_contact_012",
+    "group": "contact",
+    "label": "ALAMAT",
+    "type": "text",
+    "defaultValue": "ALAMAT"
+  },
+  {
+    "key": "contact_address",
+    "group": "contact",
+    "label": "Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171",
+    "type": "text",
+    "defaultValue": "Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171"
+  },
+  {
+    "key": "contact_maps_url",
+    "group": "contact",
+    "label": "Tautan Google Maps",
+    "type": "url",
+    "defaultValue": "https://maps.google.com/?q=-5.1275,119.4125"
+  },
+  {
+    "key": "pandai_contact_015",
+    "group": "contact",
+    "label": "Buka di Google Maps",
+    "type": "text",
+    "defaultValue": "Buka di Google Maps"
+  },
+  {
+    "key": "pandai_contact_016",
+    "group": "contact",
+    "label": "PANDAI Office",
+    "type": "text",
+    "defaultValue": "PANDAI Office"
+  },
+  {
+    "key": "pandai_contact_017",
+    "group": "contact",
+    "label": "Kirim pesan",
+    "type": "text",
+    "defaultValue": "Kirim pesan"
+  },
+  {
+    "key": "pandai_contact_018",
+    "group": "contact",
+    "label": "Pesan Terkirim!",
+    "type": "text",
+    "defaultValue": "Pesan Terkirim!"
+  },
+  {
+    "key": "pandai_contact_019",
+    "group": "contact",
+    "label": "Terima kasih telah menghubungi Pandai. Tim kami akan segera merespons Anda.",
+    "type": "text",
+    "defaultValue": "Terima kasih telah menghubungi Pandai. Tim kami akan segera merespons Anda."
+  },
+  {
+    "key": "pandai_contact_020",
+    "group": "contact",
+    "label": "Kirim pesan lain",
+    "type": "text",
+    "defaultValue": "Kirim pesan lain"
+  },
+  {
+    "key": "pandai_contact_021",
+    "group": "contact",
+    "label": "Nama lengkap",
+    "type": "text",
+    "defaultValue": "Nama lengkap"
+  },
+  {
+    "key": "pandai_contact_022",
+    "group": "contact",
+    "label": "Nama Anda",
+    "type": "text",
+    "defaultValue": "Nama Anda"
+  },
+  {
+    "key": "pandai_contact_023",
+    "group": "contact",
+    "label": "Perusahaan",
+    "type": "text",
+    "defaultValue": "Perusahaan"
+  },
+  {
+    "key": "pandai_contact_024",
+    "group": "contact",
+    "label": "Nama PT / Instansi",
+    "type": "text",
+    "defaultValue": "Nama PT / Instansi"
+  },
+  {
+    "key": "pandai_contact_025",
+    "group": "contact",
+    "label": "Email kerja",
+    "type": "text",
+    "defaultValue": "Email kerja"
+  },
+  {
+    "key": "pandai_contact_026",
+    "group": "contact",
+    "label": "nama@perusahaan.com",
+    "type": "text",
+    "defaultValue": "nama@perusahaan.com"
+  },
+  {
+    "key": "pandai_contact_027",
+    "group": "contact",
+    "label": "Pilih layanan",
+    "type": "text",
+    "defaultValue": "Pilih layanan"
+  },
+  {
+    "key": "pandai_contact_028",
+    "group": "contact",
+    "label": "-- Pilih Layanan --",
+    "type": "text",
+    "defaultValue": "-- Pilih Layanan --"
+  },
+  {
+    "key": "pandai_contact_029",
+    "group": "contact",
+    "label": "Pandai Cloud Service",
+    "type": "text",
+    "defaultValue": "Pandai Cloud Service"
+  },
+  {
+    "key": "pandai_contact_030",
+    "group": "contact",
+    "label": "IT Consulting",
+    "type": "text",
+    "defaultValue": "IT Consulting"
+  },
+  {
+    "key": "pandai_contact_031",
+    "group": "contact",
+    "label": "Localoop & Metro-E",
+    "type": "text",
+    "defaultValue": "Localoop & Metro-E"
+  },
+  {
+    "key": "pandai_contact_032",
+    "group": "contact",
+    "label": "Software Development",
+    "type": "text",
+    "defaultValue": "Software Development"
+  },
+  {
+    "key": "pandai_contact_033",
+    "group": "contact",
+    "label": "Kebutuhan Lainnya",
+    "type": "text",
+    "defaultValue": "Kebutuhan Lainnya"
+  },
+  {
+    "key": "pandai_contact_034",
+    "group": "contact",
+    "label": "Ceritakan kebutuhan Anda",
+    "type": "text",
+    "defaultValue": "Ceritakan kebutuhan Anda"
+  },
+  {
+    "key": "pandai_contact_035",
+    "group": "contact",
+    "label": "Deskripsikan kebutuhan infrastruktur atau teknologi digital Anda...",
+    "type": "text",
+    "defaultValue": "Deskripsikan kebutuhan infrastruktur atau teknologi digital Anda..."
+  },
+  {
+    "key": "pandai_navigation_001",
+    "group": "navigation",
+    "label": "Tentang",
+    "type": "text",
+    "defaultValue": "Tentang"
+  },
+  {
+    "key": "pandai_navigation_002",
+    "group": "navigation",
+    "label": "Layanan",
+    "type": "text",
+    "defaultValue": "Layanan"
+  },
+  {
+    "key": "pandai_navigation_003",
+    "group": "navigation",
+    "label": "Proses",
+    "type": "text",
+    "defaultValue": "Proses"
+  },
+  {
+    "key": "pandai_navigation_004",
+    "group": "navigation",
+    "label": "Mitra",
+    "type": "text",
+    "defaultValue": "Mitra"
+  },
+  {
+    "key": "pandai_navigation_005",
+    "group": "navigation",
+    "label": "Blog",
+    "type": "text",
+    "defaultValue": "Blog"
+  },
+  {
+    "key": "pandai_navigation_006",
+    "group": "navigation",
+    "label": "Pandai — Beranda",
+    "type": "text",
+    "defaultValue": "Pandai — Beranda"
+  },
+  {
+    "key": "site_logo",
+    "group": "settings",
+    "label": "Gambar: Pandai.png",
+    "type": "image",
+    "defaultValue": "/images/Pandai.png"
+  },
+  {
+    "key": "pandai_navigation_008",
+    "group": "navigation",
+    "label": "Deskripsi gambar: Pandai — Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "Pandai — Pintu Data Indonesia"
+  },
+  {
+    "key": "pandai_navigation_009",
+    "group": "navigation",
+    "label": "Tujuan tautan: /#kontak",
+    "type": "url",
+    "defaultValue": "/#kontak"
+  },
+  {
+    "key": "pandai_navigation_010",
+    "group": "navigation",
+    "label": "Hubungi Kami",
+    "type": "text",
+    "defaultValue": "Hubungi Kami"
+  },
+  {
+    "key": "pandai_navigation_011",
+    "group": "navigation",
+    "label": "Toggle Navigation",
+    "type": "text",
+    "defaultValue": "Toggle Navigation"
+  },
+  {
+    "key": "pandai_navigation_012",
+    "group": "navigation",
+    "label": "Tujuan tautan: /#kontak",
+    "type": "url",
+    "defaultValue": "/#kontak"
+  },
+  {
+    "key": "pandai_navigation_013",
+    "group": "navigation",
+    "label": "Hubungi Kami",
+    "type": "text",
+    "defaultValue": "Hubungi Kami"
+  },
+  {
+    "key": "pandai_footer_002",
+    "group": "footer",
+    "label": "Deskripsi gambar: Pandai — Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "Pandai — Pintu Data Indonesia"
+  },
+  {
+    "key": "pandai_footer_003",
+    "group": "footer",
+    "label": "PT Pintu Data Indonesia — mitra solusi teknologi dan infrastruktur digital untuk bisnis An",
+    "type": "text",
+    "defaultValue": "PT Pintu Data Indonesia — mitra solusi teknologi dan infrastruktur digital untuk bisnis Anda."
+  },
+  {
+    "key": "pandai_footer_004",
+    "group": "footer",
+    "label": "Perusahaan",
+    "type": "text",
+    "defaultValue": "Perusahaan"
+  },
+  {
+    "key": "pandai_footer_005",
+    "group": "footer",
+    "label": "Tujuan tautan: /#tentang",
+    "type": "url",
+    "defaultValue": "/#tentang"
+  },
+  {
+    "key": "pandai_footer_006",
+    "group": "footer",
+    "label": "Tentang Kami",
+    "type": "text",
+    "defaultValue": "Tentang Kami"
+  },
+  {
+    "key": "pandai_footer_007",
+    "group": "footer",
+    "label": "Tujuan tautan: /#proses",
+    "type": "url",
+    "defaultValue": "/#proses"
+  },
+  {
+    "key": "pandai_footer_008",
+    "group": "footer",
+    "label": "Cara Kerja",
+    "type": "text",
+    "defaultValue": "Cara Kerja"
+  },
+  {
+    "key": "pandai_footer_009",
+    "group": "footer",
+    "label": "Tujuan tautan: /#galeri",
+    "type": "url",
+    "defaultValue": "/#galeri"
+  },
+  {
+    "key": "pandai_footer_010",
+    "group": "footer",
+    "label": "Galeri",
+    "type": "text",
+    "defaultValue": "Galeri"
+  },
+  {
+    "key": "pandai_footer_011",
+    "group": "footer",
+    "label": "Tujuan tautan: /#mitra",
+    "type": "url",
+    "defaultValue": "/#mitra"
+  },
+  {
+    "key": "pandai_footer_012",
+    "group": "footer",
+    "label": "Mitra",
+    "type": "text",
+    "defaultValue": "Mitra"
+  },
+  {
+    "key": "pandai_footer_013",
+    "group": "footer",
+    "label": "Tujuan tautan: /#blog",
+    "type": "url",
+    "defaultValue": "/#blog"
+  },
+  {
+    "key": "pandai_footer_014",
+    "group": "footer",
+    "label": "Blog",
+    "type": "text",
+    "defaultValue": "Blog"
+  },
+  {
+    "key": "pandai_footer_015",
+    "group": "footer",
+    "label": "Tujuan tautan: /#faq",
+    "type": "url",
+    "defaultValue": "/#faq"
+  },
+  {
+    "key": "pandai_footer_016",
+    "group": "footer",
+    "label": "FAQ",
+    "type": "text",
+    "defaultValue": "FAQ"
+  },
+  {
+    "key": "pandai_footer_017",
+    "group": "footer",
+    "label": "Layanan",
+    "type": "text",
+    "defaultValue": "Layanan"
+  },
+  {
+    "key": "pandai_footer_018",
+    "group": "footer",
+    "label": "Tujuan tautan: /#layanan",
+    "type": "url",
+    "defaultValue": "/#layanan"
+  },
+  {
+    "key": "pandai_footer_019",
+    "group": "footer",
+    "label": "IT Consulting",
+    "type": "text",
+    "defaultValue": "IT Consulting"
+  },
+  {
+    "key": "pandai_footer_020",
+    "group": "footer",
+    "label": "Tujuan tautan: /#layanan",
+    "type": "url",
+    "defaultValue": "/#layanan"
+  },
+  {
+    "key": "pandai_footer_021",
+    "group": "footer",
+    "label": "Localoop & Metro-E",
+    "type": "text",
+    "defaultValue": "Localoop & Metro-E"
+  },
+  {
+    "key": "pandai_footer_022",
+    "group": "footer",
+    "label": "Tujuan tautan: /#layanan",
+    "type": "url",
+    "defaultValue": "/#layanan"
+  },
+  {
+    "key": "pandai_footer_023",
+    "group": "footer",
+    "label": "Software Development",
+    "type": "text",
+    "defaultValue": "Software Development"
+  },
+  {
+    "key": "pandai_footer_024",
+    "group": "footer",
+    "label": "Tujuan tautan: /#layanan",
+    "type": "url",
+    "defaultValue": "/#layanan"
+  },
+  {
+    "key": "pandai_footer_025",
+    "group": "footer",
+    "label": "Pandai Cloud",
+    "type": "text",
+    "defaultValue": "Pandai Cloud"
+  },
+  {
+    "key": "pandai_footer_026",
+    "group": "footer",
+    "label": "Kontak",
+    "type": "text",
+    "defaultValue": "Kontak"
+  },
+  {
+    "key": "copyright_text",
+    "group": "settings",
+    "label": "© 2026 PT Pintu Data Indonesia. All rights reserved.",
+    "type": "text",
+    "defaultValue": "© 2026 PT Pintu Data Indonesia. All rights reserved."
+  },
+  {
+    "key": "pandai_footer_031",
+    "group": "footer",
+    "label": "Pintu Data Indonesia",
+    "type": "text",
+    "defaultValue": "Pintu Data Indonesia"
+  },
+  {
+    "key": "site_name",
+    "group": "settings",
+    "label": "Nama perusahaan",
+    "defaultValue": "Pandai",
+    "type": "text"
+  },
+  {
+    "key": "site_tagline",
+    "group": "settings",
+    "label": "Tagline",
+    "defaultValue": "Pintu Data Indonesia",
+    "type": "text"
+  },
+  {
+    "key": "site_favicon",
+    "group": "settings",
+    "label": "Favicon",
+    "defaultValue": "/images/Pandai.png",
+    "type": "image"
+  },
+  {
+    "key": "seo_meta_title",
+    "group": "settings",
+    "label": "Judul SEO",
+    "defaultValue": "Pandai — PT Pintu Data Indonesia | Infrastruktur & Solusi Digital",
+    "type": "text"
+  },
+  {
+    "key": "seo_meta_description",
+    "group": "settings",
+    "label": "Deskripsi SEO",
+    "defaultValue": "Dari konsultasi IT, jaringan fiber optik, data center, hingga cloud dan pengembangan perangkat lunak — dalam satu mitra terpercaya.",
+    "type": "text"
+  },
+  {
+    "key": "social_instagram",
+    "group": "settings",
+    "label": "Instagram URL",
+    "defaultValue": "",
+    "type": "url"
+  },
+  {
+    "key": "social_linkedin",
+    "group": "settings",
+    "label": "LinkedIn URL",
+    "defaultValue": "",
+    "type": "url"
+  },
+  {
+    "key": "social_facebook",
+    "group": "settings",
+    "label": "Facebook URL",
+    "defaultValue": "",
+    "type": "url"
+  },
+  {
+    "key": "service_detail_label",
+    "group": "services",
+    "label": "Teks tombol detail layanan",
+    "defaultValue": "Pelajari Layanan",
+    "type": "text"
+  },
+  {
+    "key": "service_back_label",
+    "label": "Detail: tombol kembali",
+    "defaultValue": "Kembali ke Semua Layanan",
+    "group": "services",
+    "type": "text"
+  },
+  {
+    "key": "service_contact_label",
+    "label": "Detail: tombol konsultasi",
+    "defaultValue": "Diskusikan Kebutuhan Anda",
+    "group": "services",
+    "type": "text"
+  },
+  {
+    "key": "service_features_label",
+    "label": "Detail: judul fitur",
+    "defaultValue": "Fitur & Keunggulan Layanan",
+    "group": "services",
+    "type": "text"
+  }
+]
