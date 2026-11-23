@@ -21,13 +21,13 @@ export const Footer: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
             {/* Column 1: Brand Info (span 2) */}
             <div className="lg:col-span-2 space-y-4">
-              <div className="inline-flex rounded-xl bg-white px-3 py-1.5 shadow-sm">
+              <Link href="/" aria-label={t("pandai_navigation_006")} className="inline-flex h-10 -translate-y-0.5 items-center group">
                 <img
                   src={t("site_logo")}
                   alt={t("pandai_footer_002")}
-                  className="h-12 w-auto object-contain"
+                  className="block h-8 w-auto object-contain transition-transform group-hover:scale-[1.03]"
                 />
-              </div>
+              </Link>
               <p className="text-sm text-sky-100 max-w-sm leading-relaxed">
                 {t("pandai_footer_003")}</p>
             </div>
