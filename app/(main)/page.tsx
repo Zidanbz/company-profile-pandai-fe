@@ -14,7 +14,7 @@ import { getSiteContent } from "@/lib/content/server";
 import { contentDefaults } from "@/lib/content/catalog";
 
 export default async function HomePage() {
-  const content = { ...contentDefaults, ...await getSiteContent() };
+  const content = { ...contentDefaults, ...(await getSiteContent()) };
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -27,7 +27,6 @@ export default async function HomePage() {
       streetAddress: content.contact_address,
       addressLocality: content.contact_city,
       addressRegion: "Sulawesi Selatan",
-      postalCode: "90171",
       addressCountry: "ID",
     },
     contactPoint: {
@@ -42,7 +41,12 @@ export default async function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, () => String.fromCharCode(92) + 'u003c') }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(
+            /</g,
+            () => String.fromCharCode(92) + "u003c",
+          ),
+        }}
       />
       <HeroSection />
       <AboutSection />

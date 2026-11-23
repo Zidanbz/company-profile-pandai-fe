@@ -204,7 +204,7 @@ export const COMPANY_INFO = {
       {
         question: "Di mana lokasi kantor dan jam operasionalnya?",
         answer:
-          "Kantor operasional kami beralamat di Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171. Jam kerja kami adalah Senin - Jumat, 08:30 - 17:00 WITA.",
+          "Kantor operasional kami beralamat di Jl. Racing Centre No. 21B Makassar - Indonesia. Jam kerja kami adalah Senin - Jumat, 08:30 - 17:00 WITA.",
       },
       {
         question: "Di mana saya bisa memesan layanan VPS dan cloud?",
@@ -226,8 +226,8 @@ export const COMPANY_INFO = {
     hours: "08:30 - 17:00",
     city: "Makassar, Sulawesi Selatan",
     address:
-      "Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171",
-    mapsUrl: "https://maps.google.com/?q=-5.1275,119.4125",
+      "Jl. Racing Centre No. 21B Makassar - Indonesia",
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Jl.%20Racing%20Centre%20No.%2021B%20Makassar%20-%20Indonesia",
     formServices: [
       "Pandai Cloud Service",
       "IT Consulting",

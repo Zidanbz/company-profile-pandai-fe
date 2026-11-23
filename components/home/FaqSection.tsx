@@ -19,30 +19,53 @@ export const FaqSection: React.FC = () => {
     <section id="faq" className="py-20 md:py-28 bg-white relative">
       <Container size="xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
           {/* Left Column: Heading & CTA */}
           <div className="lg:col-span-5 space-y-5">
             <div className="inline-block px-3.5 py-1 rounded-full bg-sky-50 text-[#0077c8] text-xs font-bold uppercase tracking-wider border border-sky-100">
-              {t("pandai_faq_001")}</div>
+              {t("pandai_faq_001")}
+            </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
-              {t("pandai_faq_002")}</h2>
+              {t("pandai_faq_002")}
+            </h2>
 
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              {t("pandai_faq_003")}</p>
+              {t("pandai_faq_003")}
+            </p>
 
             <div className="pt-2">
               <a
                 href={t("pandai_faq_004")}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl font-semibold text-sm text-white bg-[#f97316] hover:bg-[#ea580c] shadow-md shadow-[#f97316]/20 transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                {t("pandai_faq_005")}</a>
+                {t("pandai_faq_005")}
+              </a>
             </div>
           </div>
 
           {/* Right Column: Accordion */}
           <div className="lg:col-span-7 space-y-4">
-            {[{"question":"Layanan apa saja yang disediakan Pandai?","answer":"Konsultasi IT, konektivitas Localoop & Metro-E melalui fiber optik, pengelolaan data center, penyediaan VPS dan layanan cloud, serta pengembangan perangkat lunak."},{"question":"Bagaimana cara memulai kerja sama?","answer":"Anda dapat menghubungi tim kami melalui formulir kontak atau tombol 'Jadwalkan Konsultasi'. Tim representatif kami akan segera menghubungi Anda untuk diskusi teknis dan penawaran spesifik."},{"question":"Di mana lokasi kantor dan jam operasionalnya?","answer":"Kantor operasional kami beralamat di Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171. Jam kerja kami adalah Senin - Jumat, 08:30 - 17:00 WITA."},{"question":"Di mana saya bisa memesan layanan VPS dan cloud?","answer":"Pemesanan layanan cloud and VPS dapat langsung melalui integrasi Pandai Cloud Service atau menghubungi kontak sales & support kami."}].map((item, index) => {
+            {[
+              {
+                question: "Layanan apa saja yang disediakan Pandai?",
+                answer:
+                  "Konsultasi IT, konektivitas Localoop & Metro-E melalui fiber optik, pengelolaan data center, penyediaan VPS dan layanan cloud, serta pengembangan perangkat lunak.",
+              },
+              {
+                question: "Bagaimana cara memulai kerja sama?",
+                answer:
+                  "Anda dapat menghubungi tim kami melalui formulir kontak atau tombol 'Jadwalkan Konsultasi'. Tim representatif kami akan segera menghubungi Anda untuk diskusi teknis dan penawaran spesifik.",
+              },
+              {
+                question: "Di mana lokasi kantor dan jam operasionalnya?",
+                answer: `Kantor operasional kami beralamat di ${t("contact_address")}. Jam kerja kami adalah Senin - Jumat, ${t("contact_hours")} WITA.`,
+              },
+              {
+                question: "Di mana saya bisa memesan layanan VPS dan cloud?",
+                answer:
+                  "Pemesanan layanan cloud and VPS dapat langsung melalui integrasi Pandai Cloud Service atau menghubungi kontak sales & support kami.",
+              },
+            ].map((item, index) => {
               const isOpen = openIndex === index;
               return (
                 <div
@@ -63,7 +86,11 @@ export const FaqSection: React.FC = () => {
                           : "bg-sky-50 text-[#0077c8]"
                       }`}
                     >
-                      {isOpen ? <X className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                      {isOpen ? (
+                        <X className="w-4 h-4" />
+                      ) : (
+                        <Plus className="w-4 h-4" />
+                      )}
                     </div>
                   </button>
 
@@ -85,7 +112,6 @@ export const FaqSection: React.FC = () => {
               );
             })}
           </div>
-
         </div>
       </Container>
     </section>

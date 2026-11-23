@@ -954,16 +954,16 @@
   {
     "key": "contact_address",
     "group": "contact",
-    "label": "Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171",
+    "label": "Alamat lengkap",
     "type": "text",
-    "defaultValue": "Jl. Muhammadiyah Lr. 139B/24, RT 003/RW 007, Kel. Melayu, Kec. Wajo, Kota Makassar 90171"
+    "defaultValue": "Jl. Racing Centre No. 21B Makassar - Indonesia"
   },
   {
     "key": "contact_maps_url",
     "group": "contact",
     "label": "Tautan Google Maps",
     "type": "url",
-    "defaultValue": "https://maps.google.com/?q=-5.1275,119.4125"
+    "defaultValue": "https://www.google.com/maps/search/?api=1&query=Jl.%20Racing%20Centre%20No.%2021B%20Makassar%20-%20Indonesia"
   },
   {
     "key": "pandai_contact_015",
